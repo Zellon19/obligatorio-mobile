@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, Button } from 'react-native'
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, Button, Alert } from 'react-native'
 
 const styles = StyleSheet.create({
     container: {
@@ -24,8 +24,7 @@ export default function Login() {
             <TextInput placeholder='Introduce el usuario'/>
             <Text>Contraseña</Text>
             <TextInput placeholder='Introduce la contraseña'/>
-            <TouchableOpacity onPress={alert('enviado')}>Iniciar sesión</TouchableOpacity>
-            <Button title='Iniciar sesión' onPress={alert('enviado btn')}/>
+            <Button title='Iniciar sesión' onPress={() => Alert.alert('Alert', 'Login btn')}/>
         </View>
     )
 }
