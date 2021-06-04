@@ -2,25 +2,35 @@ import React from 'react'
 
 export default function users() {
 
-    const users = [{'user':'Pepito123',
+    const users = [{'id': 0,
+                    'user':'Pepito123',
                     'password':'contraseña123'},
-                    {'user':'JorgeElCapo',
+                    {'id': 1,
+                    'user':'JorgeElCapo',
                     'password':'soyelmejor22'},
-                    {'user':'Sellom',
+                    {'id': 2,
+                    'user':'Sellom',
                     'password':'contraseñaFullPicada'},
-                    {'user':'artxE',
+                    {'id': 3,
+                    'user':'artxE',
                     'password':'panchosconpure'},
-                    {'user':'Juansito22',
+                    {'id': 4,
+                    'user':'Juansito22',
                     'password':'Juan2000'},
-                    {'user':'Espinzer',
+                    {'id': 5,
+                    'user':'Espinzer',
                     'password':'177013'},
-                    {'user':'MarcosElCapo',
+                    {'id': 6,
+                    'user':'MarcosElCapo',
                     'password':'elmascapito'},
-                    {'user':'PaulitaCapa123',
+                    {'id': 7,
+                    'user':'PaulitaCapa123',
                     'password':'naruto34'},
-                    {'user':'Kirosz',
+                    {'id': 8,
+                    'user':'Kirosz',
                     'password':'traidoralaraza'},
-                    {'user':'MartinSimp',
+                    {'id': 9,
+                    'user':'MartinSimp',
                     'password':'simping247'}]
 
     const empresas = [{ 'nombre':'',
@@ -29,7 +39,7 @@ export default function users() {
                         'rubro': '',
                         'fichaTecnica': '',
                         'uriFoto':''},
-                        
+
                         { 'nombre':'',
                         'ciudad':'',
                         'direccion':'',
@@ -57,6 +67,8 @@ export default function users() {
                         'rubro': '',
                         'fichaTecnica': '',
                         'uriFoto':''}]
+
+        const
 
     return (
         users
