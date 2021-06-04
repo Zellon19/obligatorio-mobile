@@ -1,0 +1,47 @@
+[
+   { 
+    "id": 0,
+    "nombre":"Carniceria Juansito",
+    "ciudad":"Colonia",
+    "direccion":"av. Artigas 122",
+    "rubro": 0,
+    "fichaTecnica": "",
+    "uriFoto":"eaaaa.jpg"},
+
+    {
+    "id": 1,
+    "nombre":"Empanaderia Pepito",
+    "ciudad":"Colonia",
+    "direccion":"gral. Flores 745",
+    "rubro": 0,
+    "fichaTecnica": "",
+    "uriFoto":"eaaaa.jpg"},
+
+    { 
+    "id": 2,
+    "nombre":"Automotora Carlitos",
+    "ciudad":"Montevideo",
+    "direccion":"18 de Julio 446",
+    "rubro": 0,
+    "fichaTecnica": "",
+    "uriFoto":"eaaaa.jpg"},
+
+    {
+    "id": 3,     
+    "nombre":"Thot pc",
+    "ciudad":"Montevideo",
+    "direccion":"av. Italia 12",
+    "rubro": 0,
+    "fichaTecnica": "",
+    "uriFoto":"eaaaa.jpg"},
+
+    { 
+    "id": 4,
+    "nombre":"Papa john Pizzeria",
+    "ciudad":"Pisa",
+    "direccion":"Il medio di pisa",
+    "rubro": 0,
+    "fichaTecnica": "",
+    "uriFoto":"eaaaa.jpg"
+    }
+]
