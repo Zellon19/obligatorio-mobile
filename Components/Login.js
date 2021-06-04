@@ -1,9 +1,10 @@
 import React from 'react'
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, Button, Alert } from 'react-native'
+import { View, Text, StyleSheet, TextInput, Button, Alert } from 'react-native'
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        marginTop: 10
     },
     loginText: {
 
@@ -24,7 +25,7 @@ export default function Login() {
             <TextInput placeholder='Introduce el usuario'/>
             <Text>Contraseña</Text>
             <TextInput placeholder='Introduce la contraseña'/>
-            <Button title='Iniciar sesión' onPress={() => Alert.alert('Alert', 'Login btn')}/>
+            <Button title='Iniciar sesión' onPress={() => Alert.alert('hola', 'adios')}/>
         </View>
     )
 }
