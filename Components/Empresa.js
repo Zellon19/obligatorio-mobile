@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import { Text, View } from 'react-native'
 
-export default class Profesional extends Component {
+export default class Empresa extends Component {
     constructor(props){
         
     }
     render() {
         return (
             <View>
-                <Text> Info de un profesional pero no porque soy vago </Text>
+                <Text> Información de una empresa exprimidora de clase baja pero nadie la quiere así que no te doy la info </Text>
             </View>
         )
     }

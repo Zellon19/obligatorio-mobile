@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { Text, View } from 'react-native'
 
 export default class Rubro extends Component {
+    constructor(props){
+        
+    }
     render() {
         return (
             <View>
