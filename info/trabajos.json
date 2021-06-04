@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "venta de empanadas",
+        "area": "panaderia",
+        "duration": "4 semanas",
+        "description": "se busca ayudante de panadero",
+        "uriPicture": "link de foto",
+        "video": "link del video",
+        "proList": null
+    },
+    {
+        "id": 2,
+        "name": "carniceria pepita",
+        "area": 0,
+        "duration": "4 semanas",
+        "description": "se busca cajero para carniceria",
+        "uriPicture": "link de foto",
+        "video": "link del video",
+        "proList": null
+    },
+    {
+        "id": 3,
+        "name": "taller mecanico",
+        "area": 0,
+        "duration": "4 semanas",
+        "description": "buscamos inflador de llantas",
+        "uriPicture": "link de foto",
+        "video": "link del video",
+        "proList": null
+    },
+    {
+        "id": 4,
+        "name": "empanadas pepito",
+        "area": 0,
+        "duration": "4 semanas",
+        "description": "se busca ayudante de panadero",
+        "uriPicture": "link de foto",
+        "video": "link del video",
+        "proList": null
+    },
+    {
+        "id": 5,
+        "name": "desarrollador de software",
+        "area": 0,
+        "duration": "4 semanas",
+        "description": "necesitamos analista programador urgentemente",
+        "uriPicture": "link de foto del + wapo",
+        "video": "link del video",
+        "proList": null
+    }
+]
