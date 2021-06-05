@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "panaderia"
+    },
+    {
+        "id": 2,
+        "name": "carniceria"
+    },
+    {
+        "id": 3,
+        "name": "mecanica"
+    },
+    {
+        "id": 4,
+        "name": "desarrollo de software"
+    },
+    {
+        "id": 5,
+        "name": "pizzeria"
+    }
+]
