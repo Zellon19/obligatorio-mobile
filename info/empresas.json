@@ -4,7 +4,7 @@
     "nombre":"Carniceria Juansito",
     "ciudad":"Colonia",
     "direccion":"av. Artigas 122",
-    "rubro": 0,
+    "rubro": 1,
     "fichaTecnica": "",
     "uriFoto":"eaaaa.jpg"},
 
@@ -22,7 +22,7 @@
     "nombre":"Automotora Carlitos",
     "ciudad":"Montevideo",
     "direccion":"18 de Julio 446",
-    "rubro": 0,
+    "rubro": 2,
     "fichaTecnica": "",
     "uriFoto":"eaaaa.jpg"},
 
@@ -31,7 +31,7 @@
     "nombre":"Thot pc",
     "ciudad":"Montevideo",
     "direccion":"av. Italia 12",
-    "rubro": 0,
+    "rubro": 3,
     "fichaTecnica": "",
     "uriFoto":"eaaaa.jpg"},
 
@@ -40,7 +40,7 @@
     "nombre":"Papa john Pizzeria",
     "ciudad":"Pisa",
     "direccion":"Il medio di pisa",
-    "rubro": 0,
+    "rubro": 4,
     "fichaTecnica": "",
     "uriFoto":"eaaaa.jpg"
     }
