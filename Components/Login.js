@@ -54,7 +54,6 @@ function loginCheck(navigate){
         Alert.alert('Login', 'Datos Incorrectos')
     }
     
-    
 }
 
 export default function Login(props) {
