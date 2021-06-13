@@ -1,15 +1,24 @@
-import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import React from 'react';
+import { Text, View, FlatList, TouchableOpacity, StyleSheet, StatusBar } from 'react-native';
 
-export default class ListaProfesional extends Component {
-    constructor(props){
-        
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        marginTop: StatusBar.currentHeight || 0,
     }
-    render() {
-        return (
-            <View>
-                <Text>lista con gente hermosa que es pro</Text>
-            </View>
-        )
-    }
+})
+
+const data = require('../info/profesionales.json');
+
+export default function ListaEmpresa({navigation}) {
+    const renderItem = ({item}) => (
+        <TouchableOpacity onPress={() => navigation.navigate('Profesional', item.id)}>
+            <Text> {item.name}</Text>
+        </TouchableOpacity>
+    );
+    return (
+        <View style={styles.container}>
+            <FlatList data={data} renderItem={renderItem} keyExtractor={item => item.id}/>
+        </View>
+    )
 }

@@ -1,15 +1,24 @@
-import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import React from 'react';
+import { Text, View, FlatList, TouchableOpacity, StyleSheet, StatusBar } from 'react-native';
 
-export default class ListaEmpresa extends Component {
-    constructor(props){
-        
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        marginTop: StatusBar.currentHeight || 0,
     }
-    render() {
-        return (
-            <View>
-                <Text>lista de empresas to wapetona</Text>
-            </View>
-        )
-    }
+})
+
+const data = require('../info/empresas.json');
+
+export default function ListaEmpresa({navigation}) {
+    const renderItem = ({item}) => (
+        <TouchableOpacity onPress={() => navigation.navigate('Empresa', item)}>
+            <Text> {item.nombre}</Text>
+        </TouchableOpacity>
+    );
+    return (
+        <View style={styles.container}>
+            <FlatList data={data} renderItem={renderItem} keyExtractor={item => item.id}/>
+        </View>
+    )
 }

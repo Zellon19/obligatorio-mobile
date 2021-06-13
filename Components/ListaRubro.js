@@ -1,15 +1,24 @@
-import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import React from 'react';
+import { Text, View, FlatList, TouchableOpacity, StyleSheet, StatusBar } from 'react-native';
 
-export default class ListaRubro extends Component {
-    constructor(props){
-        
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        marginTop: StatusBar.currentHeight || 0,
     }
-    render() {
-        return (
-            <View>
-                <Text>lista de rubros to hermosa</Text>
-            </View>
-        )
-    }
+})
+
+const data = require('../info/rubros.json');
+
+export default function ListaEmpresa({navigation}) {
+    const renderItem = ({item}) => (
+        <TouchableOpacity onPress={() => navigation.navigate('Rubro', item.id)}>
+            <Text> {item.name}</Text>
+        </TouchableOpacity>
+    );
+    return (
+        <View style={styles.container}>
+            <FlatList data={data} renderItem={renderItem} keyExtractor={item => item.id}/>
+        </View>
+    )
 }

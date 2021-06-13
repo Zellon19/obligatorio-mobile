@@ -20,31 +20,31 @@ const styles = StyleSheet.create({
 const data = [
     {
         id: '1',
-        title: 'Lista de Empresas'
+        title: 'Lista de Empresas',
+        navigateTo: 'ListaEmpresa'
     },
     {
         id: '2',
-        title: 'Lista de Profesionales'
+        title: 'Lista de Profesionales',
+        navigateTo: 'ListaProfesional'
     },
     {
         id: '3',
-        title: 'Lista de Rubros'
+        title: 'Lista de Rubros',
+        navigateTo: 'ListaRubro'
     },
     {
         id: '4',
-        title: 'Lista de Trabajos'
+        title: 'Lista de Trabajos',
+        navigateTo: 'ListaTrabajo'
     }
 ];
 
-const Item = ({ title }) => (
-    <TouchableOpacity style={styles.item}>
-        <Text style={styles.title}>{title}</Text>
-    </TouchableOpacity>
-);
-
-export default function MainMenu({navigation}){
-    const renderItem = ({ item }) => (
-        <Item title={item.title} />
+export default function MainMenu({ navigation }) {
+    const renderItem = ({item}) => (
+        <TouchableOpacity style={styles.item} onPress={() => navigation.navigate(item.navigateTo)}>
+            <Text style={styles.title}>{item.title}</Text>
+        </TouchableOpacity>
     );
 
     return (
