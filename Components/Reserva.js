@@ -19,6 +19,16 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         width: 280
     },
+    inputTextBig: {
+        height: 100,
+        marginTop: 0,
+        borderRadius: 7,
+        padding: 5,
+        marginBottom: 15,
+        borderBottomWidth: 1,
+        width: 280,
+        alignSelf: 'flex-start'
+    },
     button: {
         padding:10,
         backgroundColor:'#99ffff',
@@ -28,7 +38,6 @@ const styles = StyleSheet.create({
         alignSelf:'center',
         marginTop:10
     },
-
     login: {
         marginTop:70
     },
@@ -39,16 +48,15 @@ const styles = StyleSheet.create({
     }
 });
 
-
 export default function Reserva() {
     return (
         <View style={styles.container}>
             <Text style={styles.titulo}>¡Haga su Reserva!</Text>
             <View style={styles.login}>
                 <Text>Email</Text>
-                <TextInput onChangeText={(text) => username = text} style={styles.inputText} placeholder='Introduzca su Email'/>
+                <TextInput style={styles.inputText} placeholder='Introduzca su Email'/>
                 <Text>Reserva</Text>
-                <TextInput onChangeText={(text) => password = text} style={styles.inputText} placeholder='Introduzca su Reserva'/>
+                <TextInput style={styles.inputTextBig} multiline={true} numberOfLines={4} placeholder='Introduzca su Reserva'/>
                 <TouchableOpacity style={styles.button} onPress={() => loginCheck(navigate)}>
                     <Text>Enviar</Text>
                 </TouchableOpacity>
