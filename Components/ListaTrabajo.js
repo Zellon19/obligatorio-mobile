@@ -1,10 +1,24 @@
-import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import React from 'react';
+import { Text, View, FlatList, TouchableOpacity, StyleSheet, StatusBar } from 'react-native';
 
-export default function ListaTrabajo() {
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        marginTop: StatusBar.currentHeight || 0,
+    }
+})
+
+const data = require('../info/trabajos.json');
+
+export default function ListaEmpresa({navigation}) {
+    const renderItem = ({item}) => (
+        <TouchableOpacity onPress={() => navigation.navigate('Trabajo', item.id)}>
+            <Text> {item.name}</Text>
+        </TouchableOpacity>
+    );
     return (
-        <View>
-            <Text>una lista de trabajos to wapetona y cabrona</Text>
+        <View style={styles.container}>
+            <FlatList data={data} renderItem={renderItem} keyExtractor={item => item.id}/>
         </View>
     )
 }
