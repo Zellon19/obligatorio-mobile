@@ -5,7 +5,7 @@
     "ciudad":"Colonia",
     "direccion":"av. Artigas 122",
     "rubro": 1,
-    "fichaTecnica": "",
+    "fichaTecnica": "no tengo idea bro",
     "uriFoto":"eaaaa.jpg"},
 
     {
@@ -14,7 +14,7 @@
     "ciudad":"Colonia",
     "direccion":"gral. Flores 745",
     "rubro": 0,
-    "fichaTecnica": "",
+    "fichaTecnica": "asdsadsads",
     "uriFoto":"eaaaa.jpg"},
 
     { 
@@ -23,7 +23,7 @@
     "ciudad":"Montevideo",
     "direccion":"18 de Julio 446",
     "rubro": 2,
-    "fichaTecnica": "",
+    "fichaTecnica": "sdagfsag",
     "uriFoto":"eaaaa.jpg"},
 
     {
@@ -32,7 +32,7 @@
     "ciudad":"Montevideo",
     "direccion":"av. Italia 12",
     "rubro": 3,
-    "fichaTecnica": "",
+    "fichaTecnica": "gfdgdf",
     "uriFoto":"eaaaa.jpg"},
 
     { 
@@ -41,7 +41,7 @@
     "ciudad":"Pisa",
     "direccion":"Il medio di pisa",
     "rubro": 4,
-    "fichaTecnica": "",
+    "fichaTecnica": "sdfgfgds",
     "uriFoto":"eaaaa.jpg"
     }
 ]

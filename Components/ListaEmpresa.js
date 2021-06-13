@@ -5,24 +5,15 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         marginTop: StatusBar.currentHeight || 0,
-    },
-    item: {
-        backgroundColor: '#10f4f3',
-        padding: 20,
-        marginVertical: 8,
-        marginHorizontal: 16,
-    },
-    title: {
-        fontSize: 32,
     }
-});
+})
 
 const data = require('../info/empresas.json');
 
 export default function ListaEmpresa({navigation}) {
     const renderItem = ({item}) => (
-        <TouchableOpacity style={styles.item} onPress={() => navigation.navigate('Empresa', item)}>
-            <Text style={styles.title}> {item.nombre}</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('Empresa', item)}>
+            <Text> {item.nombre}</Text>
         </TouchableOpacity>
     );
     return (
