@@ -1,22 +1,22 @@
 [
     {
         "id": 0,
-        "name": "panaderia"
+        "name": "Panaderia"
     },
     {
         "id": 1,
-        "name": "carniceria"
+        "name": "Carniceria"
     },
     {
         "id": 2,
-        "name": "mecanica"
+        "name": "Mecanica"
     },
     {
         "id": 3,
-        "name": "desarrollo de software"
+        "name": "Desarrollo de Software"
     },
     {
         "id": 4,
-        "name": "pizzeria"
+        "name": "Pizzeria"
     }
 ]

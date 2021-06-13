@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import { Text, View, TouchableOpacity} from 'react-native'
 
-export default class Trabajo extends Component {
-    constructor(props){
-        
-    }
-    render() {
-        return (
-            <View>
-                <Text> acá te voy a describir un trabajo pero no tengo ganas de hacerlo ahora así que no jodas </Text>
-            </View>
-        )
-    }
+export default function Trabajo(pItem){
+
+    const item = pItem.navigation.state.params;
+    return (
+        <View>
+            <Text> {item.name} </Text>
+            <TouchableOpacity onPress={() => pItem.navigation.navigate('Reserva', item)}> <Text>Reserva</Text> </TouchableOpacity>
+        </View>
+    )
 }

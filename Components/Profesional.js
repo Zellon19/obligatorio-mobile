@@ -1,15 +1,12 @@
 import React, { Component } from 'react'
 import { Text, View } from 'react-native'
 
-export default class Profesional extends Component {
-    constructor(props){
-        
-    }
-    render() {
-        return (
-            <View>
-                <Text> Info de un profesional pero no porque soy vago </Text>
-            </View>
-        )
-    }
+export default function Profesional(pItem){
+
+    const item = pItem.navigation.state.params;
+    return (
+        <View>
+            <Text> {item.name} </Text>
+        </View>
+    )
 }

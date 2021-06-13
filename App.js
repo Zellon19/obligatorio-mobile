@@ -14,6 +14,7 @@ import Profesional from './Components/Profesional'
 import {createAppContainer} from 'react-navigation'
 import {createStackNavigator} from 'react-navigation-stack'
 import AboutUs from './Components/AboutUs'
+import Reserva from './Components/Reserva'
 
 const MainNav = createStackNavigator({
   Login: {screen: Login},
@@ -26,7 +27,8 @@ const MainNav = createStackNavigator({
   Empresa: {screen: Empresa},
   Rubro: {screen: Rubro},
   Trabajo: {screen: Trabajo},
-  Profesional: {screen: Profesional}
+  Profesional: {screen: Profesional},
+  Reserva: {screen: Reserva}
 });
 
 const App = createAppContainer(MainNav);
