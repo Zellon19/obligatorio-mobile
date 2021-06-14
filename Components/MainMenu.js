@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         marginTop: StatusBar.currentHeight || 0,
-        backgroundColor: '#ebb2ad',
+        backgroundColor: '#3e9ff4',
         paddingTop: 50,
 
     },
@@ -28,10 +28,11 @@ const styles = StyleSheet.create({
         alignSelf: 'center'
     },
     aboutUs: {
-        backgroundColor: '#a5afb7',
+        backgroundColor: 'black',
         padding: 20,
         marginVertical: 30,
         marginHorizontal: 16,
+        borderRadius: 15,
         
     },
     aboutUsText: {
