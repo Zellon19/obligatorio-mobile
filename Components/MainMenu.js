@@ -1,19 +1,43 @@
 import React from 'react';
-import { View, FlatList, StyleSheet, Text, StatusBar, TouchableOpacity } from 'react-native';
+import { View, FlatList, StyleSheet, Text, StatusBar, TouchableOpacity, ImageBackground} from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         marginTop: StatusBar.currentHeight || 0,
+        backgroundColor: '#ebb2ad',
+        paddingTop: 50,
+
     },
     item: {
-        backgroundColor: '#10f4f3',
+        backgroundColor: 'white',
         padding: 20,
-        marginVertical: 8,
+        marginVertical: 4,
         marginHorizontal: 16,
+        borderRadius: 15,
+        shadowColor: 'rgba(0,0,0, .4)', // IOS
+        shadowOffset: { height: 1, width: 1 }, // IOS
+        shadowOpacity: 6, // IOS
+        shadowRadius: 1, //IOS
+      
+        elevation: 2, // Android
     },
     title: {
-        fontSize: 32,
+        fontSize: 25,
+        color: 'black',
+        alignSelf: 'center'
+    },
+    aboutUs: {
+        backgroundColor: '#a5afb7',
+        padding: 20,
+        marginVertical: 30,
+        marginHorizontal: 16,
+        
+    },
+    aboutUsText: {
+        fontSize: 25,
+        color: 'white',
+        alignSelf: 'center'
     }
 });
 
@@ -55,8 +79,8 @@ export default function MainMenu({ navigation }) {
                 keyExtractor={item => item.id}
             />
 
-            <TouchableOpacity onPress={() => navigation.navigate('AboutUs')}>
-                <Text>
+            <TouchableOpacity style={styles.aboutUs} onPress={() => navigation.navigate('AboutUs')}>
+                <Text style={styles.aboutUsText}>
                     Sobre Nosotros
                 </Text>
             </TouchableOpacity>
