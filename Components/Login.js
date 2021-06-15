@@ -17,20 +17,22 @@ const styles = StyleSheet.create({
         padding: 5,
         marginBottom: 15,
         borderWidth: 1,
-        width: 280,
+        width: 270,
         borderColor: 'black',
         backgroundColor: 'white',
-        alignSelf: 'center'
+        alignSelf: 'center',
+        marginRight: 10,
     },
     button: {
         padding:10,
         backgroundColor:'black',
-        width:200,
+        width:180,
         borderRadius:15,
         alignItems:'center',
         alignSelf:'center',
         marginTop: 30,
         width: 280,
+        marginRight: 15,
     },
 
     login: {
@@ -41,7 +43,7 @@ const styles = StyleSheet.create({
     },
 
     titulo: {
-        fontSize:35,
+        fontSize:25,
         marginTop: 110,
         alignSelf:'center',
         justifyContent: 'center'
@@ -55,6 +57,7 @@ const styles = StyleSheet.create({
     texto:{
         textTransform: 'uppercase',
         marginTop: 5,
+        marginLeft: 10,
     },
     buttonText: {
         color: 'white',
@@ -64,6 +67,7 @@ const styles = StyleSheet.create({
     forgot:{
         textDecorationLine: 'underline',
         color: 'blue',
+        fontFamily: 'Futura'
     }
 });
 const users = require('../info/users.json')
@@ -86,7 +90,7 @@ function loginCheck(navigate){
 
 export default function Login(props) {
     const {navigate} = props.navigation;
-    const image = { uri: "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm232batch4-sasi-05_1.jpg?w=600&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=b282a5a0f0e4125ea3d9f9d470b999f1" };
+    const image = { uri: "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm183-nunny-09.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=fcfe47e3cbf7a98dbb5939dd78386cfa" };
     return (
         <View>
                 <ImageBackground source={image} style={styles.image}>
