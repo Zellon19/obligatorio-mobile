@@ -15,6 +15,7 @@ import {createAppContainer} from 'react-navigation'
 import {createStackNavigator} from 'react-navigation-stack'
 import AboutUs from './Components/AboutUs'
 import Reserva from './Components/Reserva'
+import loginBarato from './Components/loginBarato';
 
 const MainNav = createStackNavigator({
   Login: {screen: Login},
