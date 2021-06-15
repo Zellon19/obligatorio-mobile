@@ -5,7 +5,8 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         marginTop: StatusBar.currentHeight || 0,
-        backgroundColor: '#fbeeda',
+        backgroundColor: '#ccaacc',
+        paddingTop: 50,
     },
     item: {
         backgroundColor: 'white',
@@ -20,7 +21,7 @@ const styles = StyleSheet.create({
         elevation: 2, // Android
     },
     title: {
-        fontSize: 32,
+        fontSize: 25,
     }
 });
 

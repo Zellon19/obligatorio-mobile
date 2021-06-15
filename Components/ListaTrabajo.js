@@ -5,15 +5,28 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         marginTop: StatusBar.currentHeight || 0,
+        backgroundColor: '#aaffef',
+        paddingTop: 40,
     },
     item: {
-        backgroundColor: '#10f4f3',
+        backgroundColor: 'white',
         padding: 20,
-        marginVertical: 8,
+        marginVertical: 4,
         marginHorizontal: 16,
+        borderRadius: 15,
+        shadowColor: 'rgba(0,0,0, .4)', // IOS
+        shadowOffset: { height: 1, width: 1 }, // IOS
+        shadowOpacity: 6, // IOS
+        shadowRadius: 1, //IOS     
+        elevation: 2, // Android
     },
     title: {
-        fontSize: 32,
+        fontSize: 25,
+    },
+    sectionTitle: {
+        alignSelf: 'center',
+        fontSize: 25,
+        marginTop: 10, 
     }
 });
 
@@ -44,7 +57,7 @@ export default function ListaEmpresa({navigation}) {
                 sections={array}
                 keyExtractor={(item, index) => item + index}
                 renderItem={renderItem}
-                renderSectionHeader={({ section }) => (<Text>{section.title}</Text>)}
+                renderSectionHeader={({ section }) => (<Text style={styles.sectionTitle}>{section.title}</Text>)}
             />
         </View>
     )
