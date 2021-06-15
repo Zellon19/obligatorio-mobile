@@ -77,7 +77,7 @@ let password = '';
 function loginCheck(navigate){
     let test = false;
     users.forEach(user => {
-        if(user.user == username && user.password == password){
+        if(user.user == username.trim() && user.password == password.trim()){
             navigate('MainMenu')
             test = true;
         }
