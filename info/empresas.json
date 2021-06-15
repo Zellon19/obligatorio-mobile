@@ -6,7 +6,10 @@
     "direccion":"av. Artigas 122",
     "rubro": 1,
     "fichaTecnica": "no tengo idea bro",
-    "uriFoto":"eaaaa.jpg"},
+    "uriFoto":"eaaaa.jpg",
+    "profs":[],
+    "trabajos":[]
+    },
 
     {
     "id": 1,
@@ -15,7 +18,10 @@
     "direccion":"gral. Flores 745",
     "rubro": 0,
     "fichaTecnica": "asdsadsads",
-    "uriFoto":"eaaaa.jpg"},
+    "uriFoto":"eaaaa.jpg",
+    "profs":[],
+    "trabajos":[]
+    },
 
     { 
     "id": 2,
@@ -24,7 +30,10 @@
     "direccion":"18 de Julio 446",
     "rubro": 2,
     "fichaTecnica": "sdagfsag",
-    "uriFoto":"eaaaa.jpg"},
+    "uriFoto":"eaaaa.jpg",
+    "profs":[],
+    "trabajos":[]
+    },
 
     {
     "id": 3,     
@@ -33,7 +42,10 @@
     "direccion":"av. Italia 12",
     "rubro": 3,
     "fichaTecnica": "gfdgdf",
-    "uriFoto":"eaaaa.jpg"},
+    "uriFoto":"eaaaa.jpg",
+    "profs":[],
+    "trabajos":[]
+    },
 
     { 
     "id": 4,
@@ -42,6 +54,8 @@
     "direccion":"Il medio di pisa",
     "rubro": 4,
     "fichaTecnica": "sdfgfgds",
-    "uriFoto":"eaaaa.jpg"
+    "uriFoto":"eaaaa.jpg",
+    "profs":[],
+    "trabajos":[]
     }
 ]

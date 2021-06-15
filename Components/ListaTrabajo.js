@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, FlatList, TouchableOpacity, StyleSheet, StatusBar } from 'react-native';
+import { SectionList, Text, View, FlatList, TouchableOpacity, StyleSheet, StatusBar } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
 });
 
 const data = require('../info/trabajos.json');
+const empresas = require('../info/empresas.json') //Ver dsp usar los arrays de trabajos en empresas
 
 export default function ListaEmpresa({navigation}) {
     const renderItem = ({item}) => (
@@ -25,9 +26,26 @@ export default function ListaEmpresa({navigation}) {
             <Text style={styles.title}> {item.name}</Text>
         </TouchableOpacity>
     );
+
+    let dataE = [];
+    let dataP = [];
+    data.forEach(item => {
+        if(item.promPor == "Empresa"){
+            dataE.push(item);
+        }
+        else{
+            dataP.push(item);
+        }
+    })
+    let array = [{title:"Empresa", data: dataE}, {title:"Profesionales", data: dataP}]
     return (
         <View style={styles.container}>
-            <FlatList data={data} renderItem={renderItem} keyExtractor={item => item.id}/>
+            <SectionList
+                sections={array}
+                keyExtractor={(item, index) => item + index}
+                renderItem={renderItem}
+                renderSectionHeader={({ section }) => (<Text>{section.title}</Text>)}
+            />
         </View>
     )
 }

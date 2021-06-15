@@ -1,46 +1,90 @@
 [
     {
     "id": 0,
-    "name":"Juan Perez"
+    "name":"Juan Perez",
+    "rubro":0,
+    "nacion":"Uruguay",
+    "edad":27,
+    "desc":""
     },
     {
     "id": 1,
-    "name":"Pedro Lopez"
+    "name":"Pedro Lopez",
+    "rubro":4,
+    "nacion":"Uruguay",
+    "edad":21,
+    "desc":""
     },
     {
     "id": 2,
-    "name":"Alfredo Martinez"
+    "name":"Alfredo Martinez",
+    "rubro":2,
+    "nacion":"Uruguay",
+    "edad":33,
+    "desc":""
     },
     {
     "id": 3,
-    "name":"Martina Smith"
+    "name":"Martina Smith",
+    "rubro":0,
+    "nacion":"Uruguay",
+    "edad":32,
+    "desc":""
     },
     {
     "id": 4,
-    "name":"Jorge Hernandez"
+    "name":"Jorge Hernandez",
+    "rubro":1,
+    "nacion":"Uruguay",
+    "edad":45,
+    "desc":""
     },
     {
     "id": 5,
-    "name":"Juan Martinez"
+    "name":"Juan Martinez",
+    "rubro":1,
+    "nacion":"Uruguay",
+    "edad":30,
+    "desc":""
     },
     {
     "id": 6,
-    "name":"Siri Gimenez"
+    "name":"Siri Gimenez",
+    "rubro":3,
+    "nacion":"Uruguay",
+    "edad":22,
+    "desc":""
     },
     {
     "id": 7,
-    "name":"Paula Sosa"
+    "name":"Paula Sosa",
+    "rubro":3,
+    "nacion":"Argentina",
+    "edad":25,
+    "desc":""
     },
     {
     "id": 8,
-    "name":"Luis Lauren"
+    "name":"Luis Lauren",
+    "rubro":3,
+    "nacion":"Belgica",
+    "edad":34,
+    "desc":""
     },
     {
     "id": 9,
-    "name":"John Fitzgerald Kennedy"
+    "name":"John Fitzgerald Kennedy",
+    "rubro":1,
+    "nacion":"Estados Unidos",
+    "edad":104,
+    "desc":""
     },
     {
     "id": 10,
-    "name":"William Shakespeare"
+    "name":"William Shakespeare",
+    "rubro":0,
+    "nacion":"Inglaterra",
+    "edad":457,
+    "desc":""
     }
 ]
