@@ -82,8 +82,8 @@ export default function Reserva() {
             <Text style={styles.titulo}>¡Haga su Reserva!</Text>
                 <Text>Email</Text>
                 <TextInput style={styles.inputText} placeholder='Introduzca su Email'/>
-                <Text>Reserva</Text>
-                <TextInput style={styles.inputTextBig} multiline={true} numberOfLines={4} placeholder='Introduzca su Reserva'/>
+                <Text>Comentario</Text>
+                <TextInput style={styles.inputTextBig} multiline={true} numberOfLines={4} placeholder='Introduzca su Comentario'/>
                 <TouchableOpacity style={styles.button} onPress={() => loginCheck(navigate)}>
                     <Text style={styles.buttonText}>Enviar</Text>
                 </TouchableOpacity>

@@ -12,12 +12,12 @@ const buscarRubro = (idRubro) => {
     })
 }
 
-export default function Empresa(empresaPar) {
-    const empresa = empresaPar.navigation.state.params;
-    const image = { uri: "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/299-rob0849-ake.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=a7cf9a75058327a8e681569ce80221e4"}
+export default function Empresa(props) {
+    const link = props.navigation.state.params.uriFoto
+    const empresa = props.navigation.state.params;
+    const image = { uri: link }
     buscarRubro(empresa.rubro);
     const rubro = test;
-    // console.log(rubro);
     return (
         <View style={styles.container}>
             <Text style={styles.title}>{empresa.nombre} </Text>
