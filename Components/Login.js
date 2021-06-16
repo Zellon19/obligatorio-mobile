@@ -95,7 +95,7 @@ export default function Login(props) {
                     <TextInput onChangeText={(text) => username = text} style={styles.inputText} placeholder='Introduce el usuario' />
                     <Text style={styles.texto}>Contraseña</Text>
                     <TextInput onChangeText={(text) => password = text} style={styles.inputText} placeholder='Introduce la contraseña' secureTextEntry={true} />
-                    <TouchableOpacity onPress={() => { Alert.alert('Jodete ^_^'); alert('Jodete ^_^')}}>
+                    <TouchableOpacity onPress={() => {alert('Jodete ^_^')}}>
                         <Text style={styles.forgot}>¿Olvidaste tu Contraseña?</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={styles.button} onPress={() => loginCheck(navigate)}>
@@ -106,5 +106,3 @@ export default function Login(props) {
         </View>
     )
 }
-
-

@@ -71,20 +71,40 @@ const styles = StyleSheet.create({
     },
 });
 
+function mandarEmail(){
+
+    var data = {
+        service_id: 'default_service',
+        template_id: 'template_ael44p9',
+        user_id: 'user_1L0OEgoF7wrQCcwGgPx1l',
+        template_params: {
+            'email': 'pablo.lignelli@gmail.com',
+        }
+    };
+
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+        type:'POST',
+        data: JSON.stringify(data),
+        contentType: 'application/json'
+    }).done(function(){ 
+        console.log('eeeeeeeeaaaaaaaaaa');
+    })
+} 
+
+
 export default function Reserva() {
     const image = { uri: "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm183-kul-06.jpg?w=1300&dpr=1&fit=default&crop=default&q=80&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=e9f3cf90b2b21d37f0f162e43c098687" };
     return (
         <View>
             <ImageBackground source={image} style={styles.image}>      
             
-
             <View style={styles.login}>
             <Text style={styles.titulo}>¡Haga su Reserva!</Text>
                 <Text>Email</Text>
                 <TextInput style={styles.inputText} placeholder='Introduzca su Email'/>
                 <Text>Comentario</Text>
                 <TextInput style={styles.inputTextBig} multiline={true} numberOfLines={4} placeholder='Introduzca su Comentario'/>
-                <TouchableOpacity style={styles.button} onPress={() => loginCheck(navigate)}>
+                <TouchableOpacity style={styles.button} onPress={() => mandarEmail()}>
                     <Text style={styles.buttonText}>Enviar</Text>
                 </TouchableOpacity>
             </View>
