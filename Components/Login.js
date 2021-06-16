@@ -4,8 +4,6 @@ import { View, Text, StyleSheet, TextInput, Button, Alert, TouchableOpacity, Ima
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginTop: 10,
-        alignSelf: 'center'
     },
     loginText: {
 
@@ -47,6 +45,7 @@ const styles = StyleSheet.create({
     },
     image: {
         height: 610,
+
     },
     texto: {
         textTransform: 'uppercase',
