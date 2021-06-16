@@ -28,6 +28,7 @@ export default class Login extends React.Component {
                 if (this.state.name.trim() === users[i].user && this.state.pass.trim() === users[i].password) {
                     this.setState({ acceso: 'valido' });
                     navigate('MainMenu', { navegar: this.props.navigation },);
+                    valido = true;
                 } else {
                     this.setState({ acceso: 'Credenciales inválidas' })
                 }
