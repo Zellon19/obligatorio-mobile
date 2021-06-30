@@ -19,17 +19,37 @@ export default function Empresa(props) {
     buscarRubro(empresa.rubro);
     const rubro = test;
     return (
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
             <Text style={styles.title}>{empresa.nombre} </Text>
             <Text style={styles.text}>
                 Ciudad: {empresa.ciudad} {"\n"}
                 Dirección: {empresa.direccion} {"\n"}
                 Rubro: {rubro}
             </Text>
-            
             <Image source={image} style={styles.image} />
-            <Text style={styles.text}> Ficha técnica: {empresa.fichaTecnica} </Text>
-        </View>
+            <Text style={styles.textFichTec1}> Ficha técnica: </Text>
+
+            <View style={styles.viewFichTec}>
+            <Text style={styles.textFichTec}> Cantidad: {empresa.fichaTecnica.cantidadEmpleados}</Text>
+            </View>
+
+            <View style={styles.viewFichTec}>
+            <Text style={styles.textFichTec}> Teléfono: {empresa.fichaTecnica.telefono}</Text>
+            </View>
+
+            <View style={styles.viewFichTec}>
+            <Text style={styles.textFichTec}> Email: {empresa.fichaTecnica.email}</Text>
+            </View>
+
+            <View style={styles.viewFichTec}>
+            <Text style={styles.textFichTec}> Persona de Contacto: {empresa.fichaTecnica.personaContacto}</Text>
+            </View>
+            
+            <View style={styles.viewFichTec}>
+            <Text style={styles.textFichTec}> Slogan: {empresa.fichaTecnica.slogan}</Text>
+            </View>
+                 
+        </ScrollView>
     )
 }
 
@@ -56,6 +76,20 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: '#eefffc', 
         flex: 1, 
+    },
+    textFichTec1:  {
+        fontSize: 30,
+
+    },
+    textFichTec: {
+        borderBottomColor: "black",
+
+     
+    },
+    viewFichTec: {
+        padding: 3,
+        margin: 2,
+        backgroundColor: "#ffccff"
     }
 
 });

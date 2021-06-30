@@ -81,27 +81,19 @@ function loginCheck(navigate) {
 
 }
 
-export default function Login(props) {
+export default function Registrarse(props) {
     const { navigate } = props.navigation;
     const image = { uri: "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm183-nunny-09.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=fcfe47e3cbf7a98dbb5939dd78386cfa" };
     return (
         <View>
             <ImageBackground source={image} style={styles.image}>
 
-                <Text style={styles.titulo}>¡Bienvenido de Vuelta!</Text>
+                <Text style={styles.titulo}>¡Regístrate!</Text>
                 <View style={styles.login}>
                     <Text style={styles.texto}>Usuario</Text>
                     <TextInput onChangeText={(text) => username = text} style={styles.inputText} placeholder='Introduce el usuario' />
                     <Text style={styles.texto}>Contraseña</Text>
                     <TextInput onChangeText={(text) => password = text} style={styles.inputText} placeholder='Introduce la contraseña' secureTextEntry={true} />
-                    <TouchableOpacity onPress={() => {alert('Jodete ^_^')}}>
-                        <Text style={styles.forgot}>¿Olvidaste tu Contraseña?</Text>    
-                    </TouchableOpacity>
-
-                    <TouchableOpacity onPress={() => navigate('Registrarse')}>   
-                    <Text style={styles.forgot}>¡Regístrate ahora!</Text>
-                    </TouchableOpacity>
-                    
                     <TouchableOpacity style={styles.button} onPress={() => loginCheck(navigate)}>
                         <Text style={styles.buttonText}>Ingresar</Text>
                     </TouchableOpacity>

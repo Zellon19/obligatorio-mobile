@@ -5,7 +5,12 @@
     "ciudad":"Colonia",
     "direccion":"av. Artigas 122",
     "rubro": 1,
-    "fichaTecnica": "se está desarrollando...",
+    "fichaTecnica": {
+                      "cantidadEmpleados":"20",
+                      "telefono": "43523233",
+                      "email": "lacarni@gmail.com",
+                      "personaContacto": "Juan Perez",
+                      "slogan":"El mejor precio de la carne lo encontrás en Carnicería Juansito"},
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/299-rob0849-ake.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=a7cf9a75058327a8e681569ce80221e4",
     "profs":[],
     "trabajos":[]
@@ -17,7 +22,12 @@
     "ciudad":"Colonia",
     "direccion":"gral. Flores 745",
     "rubro": 0,
-    "fichaTecnica": "se está desarrollando...",
+    "fichaTecnica": {
+                       "cantidadEmpleados":"20",
+                        "telefono": "23433443",
+                        "email": "panaderiapepito@gmail.com",
+                        "personaContacto": "Pedro Lopez",
+                        "slogan":"pan pancito que rico"},
     "uriFoto":"eaaaa.jpg",
     "profs":[],
     "trabajos":[]
@@ -29,7 +39,12 @@
     "ciudad":"Montevideo",
     "direccion":"18 de Julio 446",
     "rubro": 2,
-    "fichaTecnica": "se está desarrollando...",
+    "fichaTecnica": {
+                    "cantidadEmpleados":"30",
+                    "telefono": "23433453",
+                    "email": "automotoraC123@gmail.com",
+                    "personaContacto": "Siri Gimenez",
+                    "slogan":"Reparamos hasta lo irreparable"},
     "uriFoto":"eaaaa.jpg",
     "profs":[],
     "trabajos":[]
@@ -41,7 +56,12 @@
     "ciudad":"Montevideo",
     "direccion":"av. Italia 12",
     "rubro": 3,
-    "fichaTecnica": "se está desarrollando...",
+    "fichaTecnica": {
+                    "cantidadEmpleados":"100",
+                    "telefono": "23433663",
+                    "email": "thot_pc12@gmail.com",
+                    "personaContacto": "Luis Lauren",
+                    "slogan":"Las mejores pc del mercado"},
     "uriFoto":"eaaaa.jpg",
     "profs":[],
     "trabajos":[]
@@ -53,7 +73,29 @@
     "ciudad":"Pisa",
     "direccion":"Il medio di pisa",
     "rubro": 4,
-    "fichaTecnica": "se está desarrollando...",
+    "fichaTecnica": {
+                    "cantidadEmpleados":"100",
+                    "telefono": "23433663",
+                    "email": "papajpizza@gmail.com",
+                    "personaContacto": "John Fitzgerald Kennedy",
+                    "slogan":"La mejor pizza del mundo"},
+    "uriFoto":"eaaaa.jpg",
+    "profs":[],
+    "trabajos":[]
+    },
+    
+    {
+    "id": 5,
+    "nombre":"A&M Estudio legal y contable ",
+    "ciudad":"Londres",
+    "direccion":"Il medio di pisa",
+    "rubro": 4,
+    "fichaTecnica": {
+                    "cantidadEmpleados":"100",
+                    "telefono": "23433663",
+                    "email": "papajpizza@gmail.com",
+                    "personaContacto": "Alfredo Martinez",
+                    "slogan":"Asoría legal para que te divorcies con dignidad"},
     "uriFoto":"eaaaa.jpg",
     "profs":[],
     "trabajos":[]

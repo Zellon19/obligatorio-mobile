@@ -5,7 +5,7 @@
     "rubro":0,
     "nacion":"Uruguay",
     "edad":27,
-    "desc":""
+    "desc":"Juan Perez es un empresario dedicado a su carnicería, con más de 10 años de experiencia en el rubro"
     },
     {
     "id": 1,
@@ -13,7 +13,7 @@
     "rubro":4,
     "nacion":"Uruguay",
     "edad":21,
-    "desc":""
+    "desc":"Pedro Lopez es un panadero que recién comienza en el rubro, interesado en seguir aprendiendo, se muestra optimista a la hora de proponerse desafíos"
     },
     {
     "id": 2,
