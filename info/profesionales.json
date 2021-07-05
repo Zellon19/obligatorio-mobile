@@ -109,7 +109,7 @@
     {
     "id": 5,
     "name":"Juan Martinez",
-    "rubro":1,
+    "rubro":"Tecnología",
     "nacion":"Uruguay",
     "edad":30,
     "desc":"Vendedor y técnico reparador de pc",
@@ -122,55 +122,121 @@
         ],
         "empresa":[ {            
             
-            "id": 4,
-            "name": "Pizzero para restaurante Papa John"
-                    }
+            "id": 7,
+            "name": "Vendedor y reparador de PC"
+                }
           ]
         } 
     },
     {
     "id": 6,
     "name":"Siri Gimenez",
-    "rubro":3,
+    "rubro":"Tecnología",
     "nacion":"Uruguay",
-    "edad":22,
-    "desc":"",
-    "uriFoto":""
+    "edad":29,
+    "desc":"Siri es una excelente desarrolladora full-stack, considerada senior por su trayectoria. Dispuesta a embarcarse en nuevos desafíos.",
+    "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/396-felix-mg-2040-a.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=7115454f1351e3a1c76291bfa6c09371",
+    "trabajos":{
+        "particular":[ {
+            "id": 5,
+            "name": "Desarrollador de Software"
+                          }         
+        ],
+        "empresa":[ {            
+            
+            "id":0,
+            "name": "No tiene"
+                }
+          ]
+        }
     },
     {
     "id": 7,
     "name":"Paula Sosa",
-    "rubro":3,
+    "rubro":"Panadería",
     "nacion":"Argentina",
     "edad":25,
-    "desc":"",
-    "uriFoto":""
+    "desc":"Panadera amante de su trabajo y los bizcochitos",
+    "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-175-ae-00816.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=e3a970826283baf65ca3977fb5ce5a3e",
+    "trabajos":{
+        "particular":[ {
+            "id": 1,
+            "name": "Venta de empanadas"
+                          }         
+        ],
+        "empresa":[ {                    
+            "id":0,
+            "name": "No tiene"
+                }
+          ]
+        }
+    
     },
     {
     "id": 8,
     "name":"Luis Lauren",
-    "rubro":3,
+    "rubro":"Tecnología",
     "nacion":"Belgica",
     "edad":34,
-    "desc":"",
-    "uriFoto":""
+    "desc":"Senior desarrollador full-stack",
+    "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/310-jira1383-chim_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=3625c8664599e2e93a73baec595a403c",
+    "trabajos":{
+        "particular":[ {
+            "id": 5,
+        "name": "Desarrollador de Software"
+                          }         
+        ],
+        "empresa":[ {            
+            
+            "id":0,
+            "name": "No tiene"
+                }
+          ]
+        }
+    
     },
     {
     "id": 9,
     "name":"John Fitzgerald Kennedy",
-    "rubro":1,
+    "rubro":"Política",
     "nacion":"Estados Unidos",
-    "edad":104,
-    "desc":"",
-    "uriFoto":""
+    "edad":65,
+    "desc":"Aclamado por sus seguidores, excelente politólogo",
+    "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/392-mckinsey-21a3355-nam.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=42abca3ed3dd6a6e95b546df422ca201",
+    "trabajos":{
+        "particular":[ {
+            "id": 1,
+            "name": "Campaña política"
+                          }         
+        ],
+        "empresa":[ {            
+            
+            "id":0,
+            "name": "No tiene"
+                }
+          ]
+        }
     },
     {
     "id": 10,
     "name":"William Shakespeare",
-    "rubro":0,
+    "rubro":"Escritura",
     "nacion":"Inglaterra",
-    "edad":457,
-    "desc":"",
-    "uriFoto":""
+    "edad":57,
+    "desc":"Excelente escritor del siglo XVI",
+    "uriFoto":"https://images.rawpixel.com/image_png_600/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvNDU5LW1ja2luc2V5LTUwMDctbW9ja3VwXzEucG5n.png?s=DiIYNyJRCPmHTDyImp3decSGI4W4sumHDrcxlZY_isI",
+    "trabajos":{
+        "particular":[ {
+            "id": 8,
+            "name": "Se busca filósofo para escribir maravillosas teorías conspiranóicas"
+                          }         
+        ],
+        "empresa":[ {            
+            
+            "id":0,
+            "name": "No tiene"
+                }
+          ]
+        }
     }
 ]

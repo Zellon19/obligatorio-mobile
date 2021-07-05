@@ -3,18 +3,18 @@
     {
         "id": 1,
         "name": "Venta de empanadas",
-        "rubro": 1,
+        "rubro": "Panadería",
         "duration": "4 semanas",
         "description": "Cargo de panadero",
         "uriPicture": "link de foto",
         "video": "link del video",
         "proList": null,
-        "promPor":"Empresa"
+        "promPor":"Profesional"
     },
     {
         "id": 2,
         "name": "Carniceria Pepita",
-        "rubro": 2,
+        "rubro": "Carnicería",
         "duration": "4 semanas",
         "description": "Cajero",
         "uriPicture": "link de foto",
@@ -25,7 +25,7 @@
     {
         "id": 3,
         "name": "Taller Mecanico",
-        "rubro": 3,
+        "rubro": "Mecánica",
         "duration": "4 semanas",
         "description": "Mecánico automotriz, experiencia 3 años",
         "uriPicture": "link de foto",
@@ -36,7 +36,7 @@
     {
         "id": 4,
         "name": "Pizzero para restaurante Papa John",
-        "rubro": 5,
+        "rubro": "Panadería",
         "duration": "4 semanas",
         "description": "Ayudante de panadero",
         "uriPicture": "link de foto",
@@ -47,7 +47,7 @@
     {
         "id": 5,
         "name": "Desarrollador de Software",
-        "rubro": 4,
+        "rubro": "Tecnología",
         "duration": "4 semanas",
         "description": "Desarrollador full-stack",
         "uriPicture": "link de foto del + wapo",
@@ -58,7 +58,7 @@
     {
         "id": 5,
         "name": "Abogado",
-        "rubro": 4,
+        "rubro": "Consultoría Legal",
         "duration": "A definir",
         "description": "Se necesita abogado para reconocida firma",
         "uriPicture": "link de foto del + wapo",
@@ -69,12 +69,34 @@
     {
         "id": 6,
         "name": "Vendedor de autos",
-        "rubro": 4,
+        "rubro": "Mecánica",
         "duration": "A definir",
         "description": "Se necesita vendedor de autos para Automotora Carlitos",
         "uriPicture": "link de foto del + wapo",
         "video": "link del video",
         "proList": null,
         "promPor":"Empresa"
+    },
+    {
+        "id": 7,
+        "name": "Vendedor y reparador de PC",
+        "rubro": "Tecnología",
+        "duration": "A definir",
+        "description": "Se necesita reparador de pc ASP",
+        "uriPicture": "link de foto del + wapo",
+        "video": "link del video",
+        "proList": null,
+        "promPor":"Empresa"
+    },
+    {
+        "id": 8,
+        "name": "Se busca filósofo para escribir maravillosas teorías conspiranóicas",
+        "rubro": "Escritura",
+        "duration": "A definir",
+        "description": "Se necesita reparador de pc ASP",
+        "uriPicture": "link de foto del + wapo",
+        "video": "link del video",
+        "proList": null,
+        "promPor":"Profesional"
     }
 ]
