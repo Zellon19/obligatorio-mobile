@@ -71,6 +71,9 @@ const styles = StyleSheet.create({
     },
 });
 
+let email = "";
+let cuerpo = "";
+
 function mandarEmail(){
 
     var data = {
@@ -78,17 +81,19 @@ function mandarEmail(){
         template_id: 'template_ael44p9',
         user_id: 'user_1L0OEgoF7wrQCcwGgPx1l',
         template_params: {
-            'email': 'pablo.lignelli@gmail.com',
+            'email': email,
+            'body': cuerpo
         }
     };
 
-    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-        type:'POST',
-        data: JSON.stringify(data),
-        contentType: 'application/json'
-    }).done(function(){ 
-        console.log('eeeeeeeeaaaaaaaaaa');
-    })
+    fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      }).then(response => console.log('eeeeaaa'));
+
 } 
 
 
@@ -101,9 +106,9 @@ export default function Reserva() {
             <View style={styles.login}>
             <Text style={styles.titulo}>¡Haga su Reserva!</Text>
                 <Text>Email</Text>
-                <TextInput style={styles.inputText} placeholder='Introduzca su Email'/>
+                <TextInput style={styles.inputText} onChangeText={(text) => email = text} placeholder='Introduzca su Email'/>
                 <Text>Comentario</Text>
-                <TextInput style={styles.inputTextBig} multiline={true} numberOfLines={4} placeholder='Introduzca su Comentario'/>
+                <TextInput style={styles.inputTextBig} onChangeText={(text) => cuerpo = text} multiline={true} numberOfLines={4} placeholder='Introduzca su Comentario'/>
                 <TouchableOpacity style={styles.button} onPress={() => mandarEmail()}>
                     <Text style={styles.buttonText}>Enviar</Text>
                 </TouchableOpacity>
