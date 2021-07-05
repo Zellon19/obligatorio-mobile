@@ -20,17 +20,20 @@ export default function Empresa(props) {
     const rubro = test;
     return (
         <ScrollView style={styles.container}>
-            <Text style={styles.title}>{empresa.nombre} </Text>
-            <Text style={styles.text}>
+                 <Text style={styles.title}>{empresa.nombre} </Text>
+            
+           
+                <Text style={styles.text}>
                 Ciudad: {empresa.ciudad} {"\n"}
                 Dirección: {empresa.direccion} {"\n"}
                 Rubro: {rubro}
             </Text>
+       
             <Image source={image} style={styles.image} />
             <Text style={styles.textFichTec1}> Ficha técnica: </Text>
 
             <View style={styles.viewFichTec}>
-            <Text style={styles.textFichTec}> Cantidad: {empresa.fichaTecnica.cantidadEmpleados}</Text>
+            <Text style={styles.textFichTec}> Cantidad de Empleados: {empresa.fichaTecnica.cantidadEmpleados}</Text>
             </View>
 
             <View style={styles.viewFichTec}>
@@ -59,6 +62,7 @@ const styles = StyleSheet.create({
         color: 'black',
         alignSelf: 'center',
         marginTop: 10, 
+        fontFamily: 'Futura'
     },
     image: {
         width: 300, 
@@ -69,27 +73,29 @@ const styles = StyleSheet.create({
       
     },
     text: {
-        fontSize: 20,
+        fontSize: 15,
         marginLeft: 10,
+        fontFamily: 'Futura'
         
     },
     container: {
-        backgroundColor: '#eefffc', 
         flex: 1, 
     },
     textFichTec1:  {
-        fontSize: 30,
+        fontSize: 20,
+        fontFamily: 'Futura'
 
     },
     textFichTec: {
         borderBottomColor: "black",
-
+        fontFamily: 'Futura'
      
     },
     viewFichTec: {
         padding: 3,
         margin: 2,
-        backgroundColor: "#ffccff"
-    }
+        backgroundColor: "#ccaacc"
+    },
+
 
 });

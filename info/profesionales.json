@@ -2,42 +2,109 @@
     {
     "id": 0,
     "name":"Juan Perez",
-    "rubro":0,
+    "rubro":"Carnicería",
     "nacion":"Uruguay",
-    "edad":27,
-    "desc":"Juan Perez es un empresario dedicado a su carnicería, con más de 10 años de experiencia en el rubro"
+    "edad":42,
+    "desc":"Juan Perez es un empresario dedicado a su carnicería, con más de 10 años de experiencia en el rubro",
+    "uriFoto": "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/299-pom6733-chim-ae.jpg?w=600&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=1b5c21e22001e0b15c5692bf4e0f2dbe",
+    "trabajos":{
+        "particular":[ {
+                           "id":0,
+                           "name": "No tiene"
+                          }         
+        ],
+        "empresa":[ {            
+                    "id": 2,
+                    "name": "Carniceria Pepita"          
+                    }
+          ]
+        }       
     },
     {
     "id": 1,
     "name":"Pedro Lopez",
-    "rubro":4,
+    "rubro":"Panadería",
     "nacion":"Uruguay",
-    "edad":21,
-    "desc":"Pedro Lopez es un panadero que recién comienza en el rubro, interesado en seguir aprendiendo, se muestra optimista a la hora de proponerse desafíos"
+    "edad":50,
+    "desc":"Pedro Lopez es un panadero que recién comienza en el rubro, interesado en seguir aprendiendo, se muestra optimista a la hora de proponerse desafíos",
+    "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/305-ake1539-chim-ae.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=b3767fc4ba040201544d2edf59ed3614",
+    "trabajos":{
+        "particular":[ {
+                           "id":0,
+                           "name": "No tiene"
+                          }         
+        ],
+        "empresa":[ {            
+            "id": 1,
+            "name": "Venta de empanadas"  
+                    }
+          ]
+        } 
     },
     {
     "id": 2,
     "name":"Alfredo Martinez",
-    "rubro":2,
+    "rubro":"Mecánica",
     "nacion":"Uruguay",
     "edad":33,
-    "desc":""
+    "desc":"Alfredo es un entusiasta vendedor de autos, todos los que lo conocen lo recomiendan por su carisma y dedicación",
+    "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/392-felix-6922_1.jpg?w=600&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f08369f8dcea757377dd783c331646d8",
+    "trabajos":{
+        "particular":[ {
+                           "id":0,
+                           "name": "No tiene"
+                          }         
+        ],
+        "empresa":[ {            
+            "id": 6,
+            "name": "Vendedor de autos"
+                    }
+          ]
+        } 
     },
     {
     "id": 3,
     "name":"Martina Smith",
-    "rubro":0,
+    "rubro":"Consultoría Legal",
     "nacion":"Uruguay",
     "edad":32,
-    "desc":""
+    "desc":"Destacada en su área, Martina ofrece soluciones inmediatas a tus problemas legales",
+    "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/392-felix-7230-nam.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=3f516759cf41691a0beab7902725eead",
+    "trabajos":{
+        "particular":[ {
+            "id": 5,
+            "name": "Abogado"
+                          }         
+        ],
+        "empresa":[ {            
+            "id":0,
+            "name": "No tiene"
+                    }
+          ]
+        } 
     },
+    
     {
     "id": 4,
     "name":"Jorge Hernandez",
-    "rubro":1,
+    "rubro":"Panadería",
     "nacion":"Uruguay",
     "edad":45,
-    "desc":""
+    "desc":"Jorge es un gestor contable confiable y con una trayectoría de más de 5 años en la gestión de panaderías",
+    "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-175-chim-4015.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=bf72bad2f69cb6fa6b1f0d8fd7ca0832",
+    "trabajos":{
+        "particular":[ {
+            "id":0,
+            "name": "No tiene"
+                          }         
+        ],
+        "empresa":[ {            
+            
+            "id": 4,
+            "name": "Pizzero para restaurante Papa John"
+                    }
+          ]
+        } 
     },
     {
     "id": 5,
@@ -45,7 +112,21 @@
     "rubro":1,
     "nacion":"Uruguay",
     "edad":30,
-    "desc":""
+    "desc":"Vendedor y técnico reparador de pc",
+    "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-209-jj-00589.jpg?w=600&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=479240d4c457b769c5578ac969f7ad93",
+    "trabajos":{
+        "particular":[ {
+            "id":0,
+            "name": "No tiene"
+                          }         
+        ],
+        "empresa":[ {            
+            
+            "id": 4,
+            "name": "Pizzero para restaurante Papa John"
+                    }
+          ]
+        } 
     },
     {
     "id": 6,
@@ -53,7 +134,8 @@
     "rubro":3,
     "nacion":"Uruguay",
     "edad":22,
-    "desc":""
+    "desc":"",
+    "uriFoto":""
     },
     {
     "id": 7,
@@ -61,7 +143,8 @@
     "rubro":3,
     "nacion":"Argentina",
     "edad":25,
-    "desc":""
+    "desc":"",
+    "uriFoto":""
     },
     {
     "id": 8,
@@ -69,7 +152,8 @@
     "rubro":3,
     "nacion":"Belgica",
     "edad":34,
-    "desc":""
+    "desc":"",
+    "uriFoto":""
     },
     {
     "id": 9,
@@ -77,7 +161,8 @@
     "rubro":1,
     "nacion":"Estados Unidos",
     "edad":104,
-    "desc":""
+    "desc":"",
+    "uriFoto":""
     },
     {
     "id": 10,
@@ -85,6 +170,7 @@
     "rubro":0,
     "nacion":"Inglaterra",
     "edad":457,
-    "desc":""
+    "desc":"",
+    "uriFoto":""
     }
 ]

@@ -28,7 +28,7 @@
                         "email": "panaderiapepito@gmail.com",
                         "personaContacto": "Pedro Lopez",
                         "slogan":"pan pancito que rico"},
-    "uriFoto":"eaaaa.jpg",
+    "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/p-407-karolina-grabowska-kaboompics-2065.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=ce2909e7547df6f42e50020aac6179c9",
     "profs":[],
     "trabajos":[]
     },
@@ -45,7 +45,7 @@
                     "email": "automotoraC123@gmail.com",
                     "personaContacto": "Siri Gimenez",
                     "slogan":"Reparamos hasta lo irreparable"},
-    "uriFoto":"eaaaa.jpg",
+    "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-19-newcarr_beer.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=55c2059b147f87f08491716fb3833bc9",
     "profs":[],
     "trabajos":[]
     },
@@ -62,7 +62,7 @@
                     "email": "thot_pc12@gmail.com",
                     "personaContacto": "Luis Lauren",
                     "slogan":"Las mejores pc del mercado"},
-    "uriFoto":"eaaaa.jpg",
+    "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/s89-ted-3042-kanate-01-mockup.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=d5c4d657cdfdc3735c88c8846e856c1a",
     "profs":[],
     "trabajos":[]
     },
@@ -79,7 +79,7 @@
                     "email": "papajpizza@gmail.com",
                     "personaContacto": "John Fitzgerald Kennedy",
                     "slogan":"La mejor pizza del mundo"},
-    "uriFoto":"eaaaa.jpg",
+    "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/a019-jakubk-1309-dining-in-cozy-pizzeria.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=4bbd714f20149ac606d5280565598d66",
     "profs":[],
     "trabajos":[]
     },
@@ -88,15 +88,15 @@
     "id": 5,
     "nombre":"A&M Estudio legal y contable ",
     "ciudad":"Londres",
-    "direccion":"Il medio di pisa",
+    "direccion":"Right there Street 123",
     "rubro": 4,
     "fichaTecnica": {
                     "cantidadEmpleados":"100",
                     "telefono": "23433663",
-                    "email": "papajpizza@gmail.com",
+                    "email": "a&melegal@gmail.com",
                     "personaContacto": "Alfredo Martinez",
                     "slogan":"Asoría legal para que te divorcies con dignidad"},
-    "uriFoto":"eaaaa.jpg",
+    "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-63-maew-13636-olj1208-2.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=1a1b8cb4a308210901dce3ab9ef9e2c3",
     "profs":[],
     "trabajos":[]
     }

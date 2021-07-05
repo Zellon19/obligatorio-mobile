@@ -35,7 +35,7 @@
     },
     {
         "id": 4,
-        "name": "Pizzas Papa John",
+        "name": "Pizzero para restaurante Papa John",
         "rubro": 5,
         "duration": "4 semanas",
         "description": "Ayudante de panadero",
@@ -54,5 +54,27 @@
         "video": "link del video",
         "proList": null,
         "promPor":"Profesional"
+    },
+    {
+        "id": 5,
+        "name": "Abogado",
+        "rubro": 4,
+        "duration": "A definir",
+        "description": "Se necesita abogado para reconocida firma",
+        "uriPicture": "link de foto del + wapo",
+        "video": "link del video",
+        "proList": null,
+        "promPor":"Profesional"
+    },
+    {
+        "id": 6,
+        "name": "Vendedor de autos",
+        "rubro": 4,
+        "duration": "A definir",
+        "description": "Se necesita vendedor de autos para Automotora Carlitos",
+        "uriPicture": "link de foto del + wapo",
+        "video": "link del video",
+        "proList": null,
+        "promPor":"Empresa"
     }
 ]
