@@ -99,7 +99,7 @@
     "nombre":"A&M Estudio legal y contable ",
     "ciudad":"Londres",
     "direccion":"Right there Street 123",
-    "rubro": 4,
+    "rubro": 5,
     "fichaTecnica": {
                     "cantidadEmpleados":"100",
                     "telefono": "23433663",
@@ -112,5 +112,24 @@
         {"id": 6,
         "name": "Electricista automotriz"}
     ]
-    }
+    },
+    {
+        "id": 6,
+        "nombre":"Informes SE",
+        "ciudad":"Londres",
+        "direccion":"Right there Street 123",
+        "rubro": 6,
+        "fichaTecnica": {
+                        "cantidadEmpleados":"10",
+                        "telefono": "23433663",
+                        "email": "informesSE@gmail.com",
+                        "personaContacto": "Alfredo Martinez",
+                        "slogan":"Informes objetivos y no tanto"},
+        "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-63-maew-13636-olj1208-2.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=1a1b8cb4a308210901dce3ab9ef9e2c3",
+        "profs":[],
+        "trabajos":[
+            {"id": 6,
+        "name": "Escritor de ensayos"}
+        ]
+        }
 ]
