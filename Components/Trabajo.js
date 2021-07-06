@@ -1,21 +1,30 @@
 import React, { Component } from 'react'
+<<<<<<< Updated upstream
 import { Text, View, TouchableOpacity, StyleSheet, StatusBar } from 'react-native'
 import { WebView } from 'react-native-webview';
 
 export default function Trabajo(pItem) {
     //falta agregar la funcion de buscar el rubro por su id y de importar el json
+=======
+import { Text, View, TouchableOpacity, StyleSheet, Image} from 'react-native'
 
-    const item = pItem.navigation.state.params;
+export default function Trabajo(props){
+>>>>>>> Stashed changes
+
+    const trabajo = props.navigation.state.params;
+    const link = props.navigation.state.params.uriPicture
+    const image = { uri: link }
     return (
         <View>
-            <Text >{item.name}</Text>
+            <Text style={styles.title}>{trabajo.name}</Text>
             <Text style={styles.text}>
-                Rubro: {item.rubro} {"\n"}
-                Duración: {item.duration} {"\n"}
-                Descripción: {item.description} {"\n"}
-                Foto de presentación: {"\n"}
+                Rubro: {trabajo.rubro} {"\n"}
+                Duración: {trabajo.duration} {"\n"}
+                Descripción: {trabajo.description} {"\n"}
+               
                 Video: {"\n"}
             </Text>
+<<<<<<< Updated upstream
 
             <View style={styles.container}>
                 <WebView
@@ -27,6 +36,11 @@ export default function Trabajo(pItem) {
             </View>
             <TouchableOpacity style={styles.button} onPress={() => pItem.navigation.navigate('Reserva', item)}>
 
+=======
+             <Image source={image} style={styles.image} />
+            <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Reserva', trabajo)}>
+            
+>>>>>>> Stashed changes
                 <Text style={styles.buttonText}>Reservar Ahora</Text>
             </TouchableOpacity>
         </View>
@@ -52,7 +66,29 @@ const styles = StyleSheet.create({
     buttonText: {
         color: 'white',
         textTransform: 'uppercase',
-        fontSize: 17
+        fontSize: 20,
+        fontFamily: 'Futura'
+    },
+    text: {
+        marginLeft: 10,
+        fontFamily: 'Futura',
+        marginRight: 10,
+
+    },
+    title:{
+        fontFamily: 'Futura',
+        alignSelf:'center',
+        fontSize: 25,
+
+    }, 
+    image: {
+        width: 400, 
+        height: 250,
+        alignSelf: 'center',
+        margin: 0, 
+        resizeMode: 'contain',
+       
+      
     },
     WebViewStyle: {
         margin: 20,
