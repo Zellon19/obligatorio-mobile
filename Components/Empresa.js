@@ -6,7 +6,7 @@ const rubros = require('../info/rubros.json');
 let test = '';
 const buscarRubro = (idRubro) => {
     rubros.forEach(rub => {
-        if(rub.id == idRubro){
+        if (rub.id === idRubro) {
             test = rub.name;
         }
     })
@@ -20,38 +20,38 @@ export default function Empresa(props) {
     const rubro = test;
     return (
         <ScrollView style={styles.container}>
-                 <Text style={styles.title}>{empresa.nombre} </Text>
-            
-           
-                <Text style={styles.text}>
+            <Text style={styles.title}>{empresa.nombre} </Text>
+
+
+            <Text style={styles.text}>
                 Ciudad: {empresa.ciudad} {"\n"}
                 Dirección: {empresa.direccion} {"\n"}
                 Rubro: {rubro}
             </Text>
-       
+
             <Image source={image} style={styles.image} />
             <Text style={styles.textFichTec1}> Ficha técnica: </Text>
 
             <View style={styles.viewFichTec}>
-            <Text style={styles.textFichTec}> Cantidad de Empleados: {empresa.fichaTecnica.cantidadEmpleados}</Text>
+                <Text style={styles.textFichTec}> Cantidad de Empleados: {empresa.fichaTecnica.cantidadEmpleados}</Text>
             </View>
 
             <View style={styles.viewFichTec}>
-            <Text style={styles.textFichTec}> Teléfono: {empresa.fichaTecnica.telefono}</Text>
+                <Text style={styles.textFichTec}> Teléfono: {empresa.fichaTecnica.telefono}</Text>
             </View>
 
             <View style={styles.viewFichTec}>
-            <Text style={styles.textFichTec}> Email: {empresa.fichaTecnica.email}</Text>
+                <Text style={styles.textFichTec}> Email: {empresa.fichaTecnica.email}</Text>
             </View>
 
             <View style={styles.viewFichTec}>
-            <Text style={styles.textFichTec}> Persona de Contacto: {empresa.fichaTecnica.personaContacto}</Text>
+                <Text style={styles.textFichTec}> Persona de Contacto: {empresa.fichaTecnica.personaContacto}</Text>
             </View>
-            
+
             <View style={styles.viewFichTec}>
-            <Text style={styles.textFichTec}> Slogan: {empresa.fichaTecnica.slogan}</Text>
+                <Text style={styles.textFichTec}> Slogan: {empresa.fichaTecnica.slogan}</Text>
             </View>
-                 
+
         </ScrollView>
     )
 }
@@ -61,27 +61,27 @@ const styles = StyleSheet.create({
         fontSize: 25,
         color: 'black',
         alignSelf: 'center',
-        marginTop: 10, 
+        marginTop: 10,
         fontFamily: 'Futura'
     },
     image: {
-        width: 300, 
+        width: 300,
         height: 250,
         alignSelf: 'center',
-        margin: 10, 
+        margin: 10,
         borderRadius: 15,
-      
+
     },
     text: {
         fontSize: 15,
         marginLeft: 10,
         fontFamily: 'Futura'
-        
+
     },
     container: {
-        flex: 1, 
+        flex: 1,
     },
-    textFichTec1:  {
+    textFichTec1: {
         fontSize: 20,
         fontFamily: 'Futura'
 
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     textFichTec: {
         borderBottomColor: "black",
         fontFamily: 'Futura'
-     
+
     },
     viewFichTec: {
         padding: 3,

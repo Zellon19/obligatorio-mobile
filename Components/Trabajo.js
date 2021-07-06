@@ -15,6 +15,15 @@ export default function Trabajo(pItem){
                 Foto de presentación: {"\n"}
                 Video: {"\n"}
             </Text>
+
+            <View style={styles.Container}>
+                <WebView
+                    style={styles.WebViewStyle}
+                    source={{ uri: 'https://www.youtube.com/embed/8Yue9YYdNLM' }}
+                    javaScriptEnabled={true}
+                    domStorageEnabled={true}
+                />
+            </View>
             <TouchableOpacity style={styles.button} onPress={() => pItem.navigation.navigate('Reserva', item)}>
             
                 <Text style={styles.buttonText}>Reservar Ahora</Text>
