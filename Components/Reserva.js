@@ -73,21 +73,28 @@ const styles = StyleSheet.create({
 
 const rubros = require('../info/rubros.json');
 const empresas = require('../info/empresas.json');
+const profs = require('../info/profesionales.json');
 
-let test = '';
-const buscarRubro = (idRubro) => {
-    rubros.forEach(rub => {
-        if(rub.id == idRubro){
-            test = rub.name;
-        }
-    })
-}
+
+let emailA = '';
 
 function buscarEmpresa(item){
     empresas.forEach(empresa =>{
         empresa.trabajos.forEach(trabajo =>{
-            if(trabajo.id = item.id){
-                return empresa;
+            if(trabajo.id == item.id){
+                console.log(empresa.fichaTecnica.email)
+                emailA = empresa.fichaTecnica.email;
+            }
+        })
+    })
+}
+
+function buscarProf(item){
+    console.log(profs)
+    profs.forEach(prof =>{
+        prof.trabajos.particular.forEach(trabajo =>{
+            if(trabajo.id == item.id){
+                emailA = prof.email;
             }
         })
     })
@@ -98,23 +105,19 @@ let cuerpo = "";
 
 function mandarEmail(item){
 
-    if(item.promPor = 'Empresa'){
-        let empresa = buscarEmpresa(item);
-        let emailA = empresa.fichaTecnica.email;
+    if(item.promPor == 'Empresa'){
+        buscarEmpresa(item);
     }
     else{
-        let prof = buscarProf(item);
-        let emailA = empresa.fichaTecnica.email;
+        buscarProf(item);
     }
-    
-    
 
     var data1 = {
         service_id: 'default_service',
         template_id: 'template_ael44p9',
         user_id: 'user_1L0OEgoF7wrQCcwGgPx1l',
         template_params: {
-            'email': emailE,
+            'email': emailA,
             'body': cuerpo
         }
     };

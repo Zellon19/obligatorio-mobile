@@ -5,6 +5,7 @@
     "rubro":"Carnicería",
     "nacion":"Uruguay",
     "edad":42,
+    "email":"juanperez@gmail.com",
     "desc":"Juan Perez es un empresario dedicado a su carnicería, con más de 10 años de experiencia en el rubro",
     "uriFoto": "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/299-pom6733-chim-ae.jpg?w=600&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=1b5c21e22001e0b15c5692bf4e0f2dbe",
     "trabajos":{
@@ -26,6 +27,7 @@
     "rubro":"Panadería",
     "nacion":"Uruguay",
     "edad":50,
+    "email":"pedrolopez@gmail.com",
     "desc":"Pedro Lopez es un panadero que recién comienza en el rubro, interesado en seguir aprendiendo, se muestra optimista a la hora de proponerse desafíos",
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/305-ake1539-chim-ae.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=b3767fc4ba040201544d2edf59ed3614",
     "trabajos":{
@@ -47,6 +49,7 @@
     "rubro":"Mecánica",
     "nacion":"Uruguay",
     "edad":33,
+    "email":"almarti@gmail.com",
     "desc":"Alfredo es un entusiasta vendedor de autos, todos los que lo conocen lo recomiendan por su carisma y dedicación",
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/392-felix-6922_1.jpg?w=600&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f08369f8dcea757377dd783c331646d8",
     "trabajos":{
@@ -68,20 +71,21 @@
     "rubro":"Consultoría Legal",
     "nacion":"Uruguay",
     "edad":32,
+    "email":"smithmartina@gmail.com",
     "desc":"Destacada en su área, Martina ofrece soluciones inmediatas a tus problemas legales",
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/392-felix-7230-nam.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=3f516759cf41691a0beab7902725eead",
     "trabajos":{
         "particular":[ {
             "id": 5,
             "name": "Abogado"
-                          }         
+            }         
         ],
         "empresa":[ {            
             "id":0,
             "name": "No tiene"
-                    }
-          ]
-        } 
+            }
+        ]
+    } 
     },
     
     {
@@ -90,12 +94,13 @@
     "rubro":"Panadería",
     "nacion":"Uruguay",
     "edad":45,
+    "email":"jorgehernan@gmail.com",
     "desc":"Jorge es un gestor contable confiable y con una trayectoría de más de 5 años en la gestión de panaderías",
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-175-chim-4015.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=bf72bad2f69cb6fa6b1f0d8fd7ca0832",
     "trabajos":{
         "particular":[ {
-            "id":0,
-            "name": "No tiene"
+            "id": 1,
+            "name": "Catering para eventos"
                           }         
         ],
         "empresa":[ {            
@@ -112,12 +117,13 @@
     "rubro":"Tecnología",
     "nacion":"Uruguay",
     "edad":30,
+    "email":"juanma@gmail.com",
     "desc":"Vendedor y técnico reparador de pc",
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-209-jj-00589.jpg?w=600&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=479240d4c457b769c5578ac969f7ad93",
     "trabajos":{
         "particular":[ {
-            "id":0,
-            "name": "No tiene"
+            "id": 5,
+            "name": "Desarrollador de Software"
                           }         
         ],
         "empresa":[ {            
@@ -134,6 +140,7 @@
     "rubro":"Tecnología",
     "nacion":"Uruguay",
     "edad":29,
+    "email":"ladeapol@gmail.com",
     "desc":"Siri es una excelente desarrolladora full-stack, considerada senior por su trayectoria. Dispuesta a embarcarse en nuevos desafíos.",
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/396-felix-mg-2040-a.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=7115454f1351e3a1c76291bfa6c09371",
     "trabajos":{
@@ -156,6 +163,7 @@
     "rubro":"Panadería",
     "nacion":"Argentina",
     "edad":25,
+    "email":"pausosa@gmail.com",
     "desc":"Panadera amante de su trabajo y los bizcochitos",
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-175-ae-00816.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=e3a970826283baf65ca3977fb5ce5a3e",
     "trabajos":{
@@ -178,6 +186,7 @@
     "rubro":"Tecnología",
     "nacion":"Belgica",
     "edad":34,
+    "email":"luisito@gmail.com",
     "desc":"Senior desarrollador full-stack",
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/310-jira1383-chim_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=3625c8664599e2e93a73baec595a403c",
     "trabajos":{
@@ -201,12 +210,13 @@
     "rubro":"Política",
     "nacion":"Estados Unidos",
     "edad":65,
+    "email":"jfk@gmail.com",
     "desc":"Aclamado por sus seguidores, excelente politólogo",
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/392-mckinsey-21a3355-nam.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=42abca3ed3dd6a6e95b546df422ca201",
     "trabajos":{
         "particular":[ {
-            "id": 1,
-            "name": "Campaña política"
+            "id": 0,
+            "name": "No tiene"
                           }         
         ],
         "empresa":[ {            
@@ -223,13 +233,14 @@
     "rubro":"Escritura",
     "nacion":"Inglaterra",
     "edad":57,
+    "email":"william@gmail.com",
     "desc":"Excelente escritor del siglo XVI",
     "uriFoto":"https://images.rawpixel.com/image_png_600/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvNDU5LW1ja2luc2V5LTUwMDctbW9ja3VwXzEucG5n.png?s=DiIYNyJRCPmHTDyImp3decSGI4W4sumHDrcxlZY_isI",
     "trabajos":{
         "particular":[ {
             "id": 8,
-            "name": "Se busca filósofo para escribir maravillosas teorías conspiranóicas"
-                          }         
+            "name": "Escritor de ensayos"
+        }         
         ],
         "empresa":[ {            
             

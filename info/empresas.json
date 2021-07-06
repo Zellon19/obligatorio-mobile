@@ -13,7 +13,9 @@
                       "slogan":"El mejor precio de la carne lo encontrás en Carnicería Juansito"},
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/299-rob0849-ake.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=a7cf9a75058327a8e681569ce80221e4",
     "profs":[],
-    "trabajos":[]
+    "trabajos":[
+        {"id": 2,
+        "name": "Carne a Domicilio"}]
     },
 
     {
@@ -25,12 +27,15 @@
     "fichaTecnica": {
                        "cantidadEmpleados":"20",
                         "telefono": "23433443",
-                        "email": "panaderiapepito@gmail.com",
+                        "email": "axel.alvarez2k4@gmail.com",
                         "personaContacto": "Pedro Lopez",
                         "slogan":"pan pancito que rico"},
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/p-407-karolina-grabowska-kaboompics-2065.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=ce2909e7547df6f42e50020aac6179c9",
     "profs":[],
-    "trabajos":[]
+    "trabajos":[
+        {"id": 4,
+        "name": "Restock de panes a almacenes"}
+    ]
     },
 
     { 
@@ -47,7 +52,9 @@
                     "slogan":"Reparamos hasta lo irreparable"},
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-19-newcarr_beer.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=55c2059b147f87f08491716fb3833bc9",
     "profs":[],
-    "trabajos":[]
+    "trabajos":[
+        {"id": 3,
+        "name": "Auxilio Mecanico"}]
     },
 
     {
@@ -64,7 +71,10 @@
                     "slogan":"Las mejores pc del mercado"},
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/s89-ted-3042-kanate-01-mockup.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=d5c4d657cdfdc3735c88c8846e856c1a",
     "profs":[],
-    "trabajos":[]
+    "trabajos":[
+        {"id": 7,
+        "name": "Reparador de PC"}
+    ]
     },
 
     { 
@@ -98,6 +108,9 @@
                     "slogan":"Asoría legal para que te divorcies con dignidad"},
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-63-maew-13636-olj1208-2.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=1a1b8cb4a308210901dce3ab9ef9e2c3",
     "profs":[],
-    "trabajos":[]
+    "trabajos":[
+        {"id": 6,
+        "name": "Electricista automotriz"}
+    ]
     }
 ]
