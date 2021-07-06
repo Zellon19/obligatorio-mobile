@@ -15,7 +15,7 @@
         "rubro": "Carnicería",
         "description": "Te llevamos carne a la puerta de tu casa",
         "uriPicture": "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/299-rob0384-ae.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=933caca0952b8eb8ef6e41a5eaf6c39d",
-        "video": "link del video",
+        "video": "https://youtu.be/ng92dWDxhE4",
         "proList": null,
         "promPor":"Empresa"
     },
@@ -25,7 +25,7 @@
         "rubro": "Mecánica",
         "description": "Brindamos auxilio 24/7 a todo el pais",
         "uriPicture": "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-105-0350.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f12f98f4897a0d0b6b6f3fbf0ff79662",
-        "video": "link del video",
+        "video": "https://youtu.be/1S8f_ZBlnnA",
         "proList": null,
         "promPor":"Empresa"
     },
@@ -35,7 +35,7 @@
         "rubro": "Panadería",
         "description": "Llevamos todos nuestros productos a almacenes",
         "uriPicture": "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/301-ted9892-eye-01.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=171810acf1c0c5a1dc8bb34284747cd0",
-        "video": "link del video",
+        "video": "https://youtu.be/qWTvGd-QNwo",
         "proList": null,
         "promPor":"Empresa"
     },
@@ -45,7 +45,7 @@
         "rubro": "Tecnología",
         "description": "Desarrollador full-stack que ofrece sus servicios",
         "uriPicture": "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm22-74-kwan-2-28-01.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=a541f4326ba4c4a24a3dbd6da95eddf0",
-        "video": "link del video",
+        "video": "https://youtu.be/LBNDfxjEYlA",
         "proList": null,
         "promPor":"Profesional"
     },
@@ -55,7 +55,7 @@
         "rubro": "Consultoría Legal",
         "description": "Se ofrecen servicios de abogado por una reconocida firma",
         "uriPicture": "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-32-kung-2868-lyj0786-3-legaladvice.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=4e6d4fad2546201865e195c32e6f0945",
-        "video": "link del video",
+        "video": "https://youtu.be/4GUFkrHvZdE",
         "proList": null,
         "promPor":"Profesional"
     },
@@ -65,7 +65,7 @@
         "rubro": "Mecánica",
         "description": "Se ofrece electricista automotriz a domicilio",
         "uriPicture": "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/372-mj-6521.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=fd42b05bc94e822dd081c31dea0db38f",
-        "video": "link del video",
+        "video": "https://youtu.be/1S8f_ZBlnnA",
         "proList": null,
         "promPor":"Empresa"
     },
@@ -75,7 +75,7 @@
         "rubro": "Tecnología",
         "description": "Reparacion e instalacion de PCs",
         "uriPicture": "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-123-kung-54916-lyj2812-1-repair.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f5eb782dae1f0eafe3e29dd47de2f948",
-        "video": "link del video",
+        "video": "https://youtu.be/bZAarPyqQ70",
         "proList": null,
         "promPor":"Empresa"
     },
@@ -85,7 +85,7 @@
         "rubro": "Escritura",
         "description": "Se escriben ensayos y analisis",
         "uriPicture": "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/396-felix-2234-jir.jpg?w=600&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=5a8dbd4d5ccc9b01aa9615f4b2718e25",
-        "video": "link del video",
+        "video": "https://youtu.be/bZAarPyqQ70",
         "proList": null,
         "promPor":"Profesional"
     }

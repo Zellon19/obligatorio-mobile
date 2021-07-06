@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, TouchableOpacity, StyleSheet, StatusBar, Image } from 'react-native'
+import { Text, View, TouchableOpacity, StyleSheet, StatusBar, Image,  ScrollView} from 'react-native'
 import { WebView } from 'react-native-webview';
 
 
@@ -12,23 +12,27 @@ export default function Trabajo(props) {
     const linkVid = props.navigation.state.params.video
     const vid = { uri: linkVid }
     return (
-        <View>
+        <ScrollView>
             <Text style={styles.title}>{trabajo.name}</Text>
             <Text style={styles.text}>
                 Rubro: {trabajo.rubro} {"\n"}
                 Descripción: {trabajo.description} {"\n"}
             </Text>
              <Image source={image} style={styles.image} />
-            <WebView
+            
+        <View style={styles.WebViewStyle}>
+        <WebView
                 source={vid}
-                style={{ marginTop: 20 }}
-            />
-
-        <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Reserva', trabajo)}>
-                    
-                    <Text style={styles.buttonText}>Reservar Ahora</Text>
-                </TouchableOpacity>
-            </View>
+                javaScriptEnabled={true}
+                domStorageEnabled={true}/>
+        </View>
+            
+        
+            <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Reserva', trabajo)}>
+            
+                <Text style={styles.buttonText}>Reservar Ahora</Text>
+            </TouchableOpacity>
+        </ScrollView>
     )
 }
 
@@ -76,8 +80,9 @@ image: {
   
 },
 WebViewStyle: {
-    margin: 20,
+    margin: 10,
     backgroundColor: "black",
     height: 350,
 },
 });
+

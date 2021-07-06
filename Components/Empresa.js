@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View, Image, StyleSheet, ScrollView } from 'react-native'
+import { Text, View, Image, StyleSheet, ScrollView, FlatList } from 'react-native'
 
 const rubros = require('../info/rubros.json');
 
@@ -13,11 +13,19 @@ const buscarRubro = (idRubro) => {
 }
 
 export default function Empresa(props) {
+
+    const renderItem = ({item}) => (
+        <TouchableOpacity style={styles.item}onPress={() => navigation.navigate('Profesional', item)}>
+            <Text style={styles.title}> {item.name}</Text>
+        </TouchableOpacity>
+    );
+
     const link = props.navigation.state.params.uriFoto
     const empresa = props.navigation.state.params;
     const image = { uri: link }
     buscarRubro(empresa.rubro);
     const rubro = test;
+    const data = props.navigation.state.params.trabajos;
     return (
         <ScrollView style={styles.container}>
             <Text style={styles.title}>{empresa.nombre} </Text>
@@ -51,6 +59,10 @@ export default function Empresa(props) {
             <View style={styles.viewFichTec}>
                 <Text style={styles.textFichTec}> Slogan: {empresa.fichaTecnica.slogan}</Text>
             </View>
+
+        <View>
+            <FlatList data={data} renderItem={renderItem} keyExtractor={item => item.id}/>
+        </View>
 
         </ScrollView>
     )
