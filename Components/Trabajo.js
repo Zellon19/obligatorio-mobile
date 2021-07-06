@@ -1,15 +1,10 @@
 import React, { Component } from 'react'
-<<<<<<< Updated upstream
-import { Text, View, TouchableOpacity, StyleSheet, StatusBar } from 'react-native'
+import { Text, View, TouchableOpacity, StyleSheet, StatusBar, Image } from 'react-native'
 import { WebView } from 'react-native-webview';
 
-export default function Trabajo(pItem) {
-    //falta agregar la funcion de buscar el rubro por su id y de importar el json
-=======
-import { Text, View, TouchableOpacity, StyleSheet, Image} from 'react-native'
 
-export default function Trabajo(props){
->>>>>>> Stashed changes
+export default function Trabajo(props) {
+    //falta agregar la funcion de buscar el rubro por su id y de importar el json
 
     const trabajo = props.navigation.state.params;
     const link = props.navigation.state.params.uriPicture
@@ -21,26 +16,16 @@ export default function Trabajo(props){
                 Rubro: {trabajo.rubro} {"\n"}
                 Duración: {trabajo.duration} {"\n"}
                 Descripción: {trabajo.description} {"\n"}
-               
-                Video: {"\n"}
             </Text>
-<<<<<<< Updated upstream
-
-            <View style={styles.container}>
-                <WebView
-                    style={styles.WebViewStyle}
-                    source={{ uri: 'https://www.youtube.com/embed/8Yue9YYdNLM' }}
-                    javaScriptEnabled={true}
-                    domStorageEnabled={true}
-                />
-            </View>
-            <TouchableOpacity style={styles.button} onPress={() => pItem.navigation.navigate('Reserva', item)}>
-
-=======
              <Image source={image} style={styles.image} />
+             <WebView
+        source={{
+          uri: 'https://github.com/facebook/react-native'
+        }}
+        style={{ marginTop: 20 }}
+      />
             <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Reserva', trabajo)}>
             
->>>>>>> Stashed changes
                 <Text style={styles.buttonText}>Reservar Ahora</Text>
             </TouchableOpacity>
         </View>
@@ -82,7 +67,7 @@ const styles = StyleSheet.create({
 
     }, 
     image: {
-        width: 400, 
+        width: 300, 
         height: 250,
         alignSelf: 'center',
         margin: 0, 
