@@ -6,7 +6,7 @@ export default function Rubro(pItem){
     const item = pItem.navigation.state.params;
     return (
         <View>
-            <Text> {item.name} {"\n"} aquí se encontrará una lista de los trabajos de este rubro </Text>
+            <Text> {item.name} {"\n"} aquí se encontrará una lista de las empresas de este rubro </Text>
             
         </View>
     )

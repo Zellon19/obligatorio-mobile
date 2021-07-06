@@ -22,7 +22,7 @@ export default function Profesional(props){
     const rubro = test;
 
     const renderItem = ({item}) => ( 
-            <Text style={styles.text}>{item.name}</Text> //falta filtrar por profesional
+            <Text style={styles.text}>{item.name}</Text> 
     );
     return (
       

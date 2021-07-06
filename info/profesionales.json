@@ -36,7 +36,7 @@
         ],
         "empresa":[ {            
             "id": 1,
-            "name": "Venta de empanadas"  
+            "name": "Venta de tacos"  
                     }
           ]
         } 
@@ -161,7 +161,7 @@
     "trabajos":{
         "particular":[ {
             "id": 1,
-            "name": "Venta de empanadas"
+            "name": "Venta de tacos"
                           }         
         ],
         "empresa":[ {                    
