@@ -71,18 +71,60 @@ const styles = StyleSheet.create({
     },
 });
 
+const rubros = require('../info/rubros.json');
+const empresas = require('../info/empresas.json');
+
+let test = '';
+const buscarRubro = (idRubro) => {
+    rubros.forEach(rub => {
+        if(rub.id == idRubro){
+            test = rub.name;
+        }
+    })
+}
+
+function buscarEmpresa(item){
+    empresas.forEach(empresa =>{
+        empresa.trabajos.forEach(trabajo =>{
+            if(trabajo.id = item.id){
+                return empresa;
+            }
+        })
+    })
+}
+
 let email = "";
 let cuerpo = "";
 
-function mandarEmail(){
+function mandarEmail(item){
 
-    var data = {
+    if(item.promPor = 'Empresa'){
+        let empresa = buscarEmpresa(item);
+        let emailA = empresa.fichaTecnica.email;
+    }
+    else{
+        let prof = buscarProf(item);
+        let emailA = empresa.fichaTecnica.email;
+    }
+    
+    
+
+    var data1 = {
         service_id: 'default_service',
         template_id: 'template_ael44p9',
         user_id: 'user_1L0OEgoF7wrQCcwGgPx1l',
         template_params: {
-            'email': email,
+            'email': emailE,
             'body': cuerpo
+        }
+    };
+
+    var data2 = {
+        service_id: 'default_service',
+        template_id: 'template_h544vug',
+        user_id: 'user_1L0OEgoF7wrQCcwGgPx1l',
+        template_params: {
+            'email': email
         }
     };
 
@@ -91,13 +133,22 @@ function mandarEmail(){
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data)
-      }).then(response => console.log('eeeeaaa'));
+        body: JSON.stringify(data1)
+      });
+
+    fetch('https://api.emailjs.com/api/v1.0/email/send', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data2)
+    });
 
 } 
 
 
-export default function Reserva() {
+export default function Reserva(props) {
+    const item = props.navigation.state.params;
     const image = { uri: "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm183-kul-06.jpg?w=1300&dpr=1&fit=default&crop=default&q=80&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=e9f3cf90b2b21d37f0f162e43c098687" };
     return (
         <View>
@@ -109,7 +160,7 @@ export default function Reserva() {
                 <TextInput style={styles.inputText} onChangeText={(text) => email = text} placeholder='Introduzca su Email'/>
                 <Text>Comentario</Text>
                 <TextInput style={styles.inputTextBig} onChangeText={(text) => cuerpo = text} multiline={true} numberOfLines={4} placeholder='Introduzca su Comentario'/>
-                <TouchableOpacity style={styles.button} onPress={() => mandarEmail()}>
+                <TouchableOpacity style={styles.button} onPress={() => mandarEmail(item)}>
                     <Text style={styles.buttonText}>Enviar</Text>
                 </TouchableOpacity>
             </View>
