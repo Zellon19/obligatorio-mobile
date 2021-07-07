@@ -35,7 +35,9 @@
     "profs":[ {"id": 1,
         "name":"Pedro Lopez"},
               {"id": 4,
-        "name":"Jorge Hernandez"} ],
+        "name":"Jorge Hernandez"},
+        {"id": 7,
+            "name":"Paula Sosa"} ],
     "trabajos":[
         {"id": 4,
         "name": "Restock de panes a almacenes"}
@@ -97,11 +99,12 @@
                     "personaContacto": "John Fitzgerald Kennedy",
                     "slogan":"La mejor pizza del mundo"},
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/a019-jakubk-1309-dining-in-cozy-pizzeria.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=4bbd714f20149ac606d5280565598d66",
-    "profs":[{"id": 7,
-        "name":"Paula Sosa"}],
+    "profs":[{
+        "id": -1,
+        "name": "No tiene"}],
     "trabajos":[{
-        "id": 4,
-        "name": "Restock de panes a almacenes"}]
+        "id": -1,
+        "name": "No tiene"}]
     },
     
     {

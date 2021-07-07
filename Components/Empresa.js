@@ -46,8 +46,15 @@ export default function Empresa(props) {
     );
 
     const renderItemProf = ({item}) => (
-        <TouchableOpacity style={styles.item}onPress={() => {buscarProfesional(item)
-            navigation.navigate('Profesional', profGlobal)}}>
+        <TouchableOpacity style={styles.item}onPress={() => {
+            buscarProfesional(item);
+            console.log(item);
+            console.log(profGlobal);
+            if(item.id != -1){
+                navigation.navigate('Profesional', profGlobal);
+            }
+            
+            }}>
             <Text style={styles.textFichTec1}> {item.name}</Text>
         </TouchableOpacity>
     );
