@@ -39,21 +39,20 @@ export default function Empresa(props) {
     const item = props.navigation.state.params;
 
     const renderItem = ({item}) => (
-        <TouchableOpacity style={styles.item}onPress={() => {buscarTrabajos(item)
+        <TouchableOpacity style={styles.button}onPress={() => {buscarTrabajos(item)
             navigation.navigate('Trabajo', trabajoGlobal)}}>
-            <Text style={styles.textFichTec1}> {item.name}</Text>
+            <Text style={styles.buttonText}> {item.name}</Text>
         </TouchableOpacity>
     );
 
     const renderItemProf = ({item}) => (
-        <TouchableOpacity style={styles.item}onPress={() => {
+        <TouchableOpacity style={styles.button}onPress={() => {
             buscarProfesional(item);
             if(item.id != -1){
                 navigation.navigate('Profesional', profGlobal);
             }
-            
-            }}>
-            <Text style={styles.textFichTec1}> {item.name}</Text>
+        }}>
+            <Text style={styles.buttonText}> {item.name}</Text>
         </TouchableOpacity>
     );
 
@@ -101,11 +100,11 @@ export default function Empresa(props) {
                 <Text style={styles.textFichTec}> Slogan: {empresa.fichaTecnica.slogan}</Text>
             </View>
             <Text style={styles.textFichTec1}>Trabajos de la Empresa: </Text>
-        <View style={styles.viewFichTec}>
+        <View>
             <FlatList data={data} renderItem={renderItem} keyExtractor={item => item.id}/>
         </View>
         <Text style={styles.textFichTec1}>Profesionales de la Empresa: </Text>
-        <View style={styles.viewFichTec}>
+        <View>
             <FlatList data={dataProf} renderItem={renderItemProf} keyExtractor={item => item.id}/>
         </View>
 
@@ -153,6 +152,22 @@ const styles = StyleSheet.create({
         margin: 2,
         backgroundColor: "#ccaacc"
     },
-
+    button: {
+        padding: 10,
+        backgroundColor: 'black',
+        width: 180,
+        borderRadius: 15,
+        alignItems: 'center',
+        alignSelf: 'center',
+        marginTop: 30,
+        width: 250,
+        marginRight: 15,
+    },
+    buttonText: {
+        color: 'white',
+        textTransform: 'uppercase',
+        fontSize: 20,
+        fontFamily: 'Futura'
+    }
 
 });

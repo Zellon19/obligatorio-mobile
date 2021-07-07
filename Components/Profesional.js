@@ -37,10 +37,10 @@ export default function Profesional(props){
     }
 
     const renderItem = ({item}) => ( 
-        <TouchableOpacity style={styles.item}onPress={() => {
+        <TouchableOpacity style={styles.button}onPress={() => {
             buscarTrabajo(item);
             props.navigation.navigate('Trabajo', trabajoG);}}>
-            <Text style={styles.text}>{item.name}</Text>
+            <Text style={styles.buttonText}>{item.name}</Text>
         </TouchableOpacity>
     );
     return (
@@ -62,7 +62,7 @@ export default function Profesional(props){
                 keyExtractor={item => item.id}
             />
             <Text style={styles.textTitle}>Por empresa</Text>
-            {/* filtrar por profesional */}
+      
             <FlatList
                 data={data}
                 renderItem={renderItem}
@@ -103,6 +103,23 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         fontFamily: 'Futura'
         
+    },
+    button: {
+        padding: 10,
+        backgroundColor: 'black',
+        width: 180,
+        borderRadius: 15,
+        alignItems: 'center',
+        alignSelf: 'center',
+        marginTop: 30,
+        width: 250,
+        marginRight: 15,
+    },
+    buttonText: {
+        color: 'white',
+        textTransform: 'uppercase',
+        fontSize: 20,
+        fontFamily: 'Futura'
     },
 
 });
