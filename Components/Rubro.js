@@ -15,13 +15,13 @@ export default function Rubro(pItem){
     })
     const renderItem = (rItem) => (
         <TouchableOpacity style={styles.item} onPress={() => { navigation.navigate('Empresa', rItem.item)}}>
-            <Text> {rItem.item.nombre} </Text>
+            <Text style={styles.text}> {rItem.item.nombre} </Text>
         </TouchableOpacity>
     );
     return (
         <View style={styles.container}>
-            <Text> Empresas de {item.name} </Text>
-            {filtered ? <FlatList data={filtered} renderItem={renderItem} keyExtractor={item => item.id}/> : <Text>No hay empresas</Text>}
+            <Text style={styles.title}> Empresas de {item.name} </Text>
+            {filtered ? <FlatList data={filtered} renderItem={renderItem} keyExtractor={item => item.id}/> : <Text style={styles.title}>No hay empresas</Text>}
             
         </View>
     )
@@ -46,4 +46,13 @@ const styles = StyleSheet.create({
         backgroundColor: '#ccaacc', 
         paddingTop: 50,
     },
+    title: {
+        fontFamily: 'Futura',
+        alignSelf:'center',
+        fontSize: 25,
+        margin: 10,
+    },
+    text: {
+        fontSize: 20,
+    }
 })

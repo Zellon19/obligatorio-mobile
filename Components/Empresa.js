@@ -12,11 +12,25 @@ const buscarRubro = (idRubro) => {
     })
 }
 
-export default function Empresa(props) {
+const trabajos = require('../info/trabajos.json');
+const test2 = '';
+const buscarTrabajos = (item) => {
+    trabajos.forEach(tra => {
+        if (tra.id === item.id) {
+            test2 = tra;
+        }
+    })
+}
 
+
+export default function Empresa(props) {
+    const navigation = props.navigation;
+    const item = props.navigation.state.params;
     const renderItem = ({item}) => (
-        <TouchableOpacity style={styles.item}onPress={() => navigation.navigate('Profesional', item)}>
-            <Text style={styles.title}> {item.name}</Text>
+        <TouchableOpacity style={styles.item}onPress={() => {buscarTrabajos(item)
+            navigation.navigate('Trabajo', test2)}}>
+            <Text style={styles.textFichTec1}> {item.name}</Text>
+            {console.log(item)}
         </TouchableOpacity>
     );
 
@@ -59,8 +73,8 @@ export default function Empresa(props) {
             <View style={styles.viewFichTec}>
                 <Text style={styles.textFichTec}> Slogan: {empresa.fichaTecnica.slogan}</Text>
             </View>
-
-        <View>
+            <Text style={styles.textFichTec1}>Trabajos de la Empresa: </Text>
+        <View style={styles.viewFichTec}>
             <FlatList data={data} renderItem={renderItem} keyExtractor={item => item.id}/>
         </View>
 
