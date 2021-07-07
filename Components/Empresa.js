@@ -13,12 +13,22 @@ const buscarRubro = (idRubro) => {
 }
 
 const trabajos = require('../info/trabajos.json');
-let test2 = '';
+const profs = require('../info/profesionales.json')
+let trabajoGlobal = '';
+let profGlobal = '';
 
 const buscarTrabajos = (item) => {
     trabajos.forEach(tra => {
         if (tra.id === item.id) {
-            test2 = tra;
+            trabajoGlobal = tra;
+        }
+    })
+}
+
+const buscarProfesional = (item) => {
+    profs.forEach(prof => {
+        if (prof.id === item.id) {
+            profGlobal = prof;
         }
     })
 }
@@ -27,11 +37,18 @@ const buscarTrabajos = (item) => {
 export default function Empresa(props) {
     const navigation = props.navigation;
     const item = props.navigation.state.params;
+
     const renderItem = ({item}) => (
         <TouchableOpacity style={styles.item}onPress={() => {buscarTrabajos(item)
-            navigation.navigate('Trabajo', test2)}}>
+            navigation.navigate('Trabajo', trabajoGlobal)}}>
             <Text style={styles.textFichTec1}> {item.name}</Text>
-            {console.log(item)}
+        </TouchableOpacity>
+    );
+
+    const renderItemProf = ({item}) => (
+        <TouchableOpacity style={styles.item}onPress={() => {buscarProfesional(item)
+            navigation.navigate('Profesional', profGlobal)}}>
+            <Text style={styles.textFichTec1}> {item.name}</Text>
         </TouchableOpacity>
     );
 
@@ -40,7 +57,11 @@ export default function Empresa(props) {
     const image = { uri: link }
     buscarRubro(empresa.rubro);
     const rubro = test;
+
     const data = props.navigation.state.params.trabajos;
+    const dataProf = props.navigation.state.params.profs;
+
+
     return (
         <ScrollView style={styles.container}>
             <Text style={styles.title}>{empresa.nombre} </Text>
@@ -77,6 +98,10 @@ export default function Empresa(props) {
             <Text style={styles.textFichTec1}>Trabajos de la Empresa: </Text>
         <View style={styles.viewFichTec}>
             <FlatList data={data} renderItem={renderItem} keyExtractor={item => item.id}/>
+        </View>
+        <Text style={styles.textFichTec1}>Profesionales de la Empresa: </Text>
+        <View style={styles.viewFichTec}>
+            <FlatList data={dataProf} renderItem={renderItemProf} keyExtractor={item => item.id}/>
         </View>
 
         </ScrollView>

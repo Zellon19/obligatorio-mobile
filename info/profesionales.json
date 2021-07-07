@@ -16,7 +16,7 @@
         ],
         "empresa":[ {            
                     "id": 2,
-                    "name": "Carniceria Pepita"          
+                    "name": "Carne a Domicilio"          
                     }
           ]
         }       
@@ -38,7 +38,7 @@
         ],
         "empresa":[ {            
             "id": 1,
-            "name": "Venta de tacos"  
+            "name": "Catering para eventos"  
                     }
           ]
         } 
@@ -60,7 +60,7 @@
         ],
         "empresa":[ {            
             "id": 6,
-            "name": "Vendedor de autos"
+            "name": "Electricista automotriz"
                     }
           ]
         } 
@@ -106,7 +106,7 @@
         "empresa":[ {            
             
             "id": 4,
-            "name": "Pizzero para restaurante Papa John"
+            "name": "Restock de panes a almacenes"
                     }
           ]
         } 
@@ -129,7 +129,7 @@
         "empresa":[ {            
             
             "id": 7,
-            "name": "Vendedor y reparador de PC"
+            "name": "Reparador de PC"
                 }
           ]
         } 
@@ -169,7 +169,7 @@
     "trabajos":{
         "particular":[ {
             "id": 1,
-            "name": "Venta de tacos"
+            "name": "Catering para eventos"
                           }         
         ],
         "empresa":[ {                    
