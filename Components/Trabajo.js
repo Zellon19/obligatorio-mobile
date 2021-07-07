@@ -1,39 +1,104 @@
 import React, { Component } from 'react'
-import { Text, View, TouchableOpacity, StyleSheet, StatusBar, Image,  ScrollView} from 'react-native'
+import { FlatList, Text, View, TouchableOpacity, StyleSheet, StatusBar, Image,  ScrollView} from 'react-native'
 import { WebView } from 'react-native-webview';
+import Profesional from './Profesional';
 
+const empresas = require('../info/empresas.json');
+const profesionales = require('../info/profesionales.json')
+
+function empleadosEmpresa(pTrabajo){
+    let emp = '';
+    empresas.forEach(empresa =>{
+        empresa.trabajos.forEach(trabajo =>{
+            if(trabajo.id == pTrabajo.id){
+                emp = empresa;
+            }
+        })
+    })
+    let arrProfs = [];
+    emp.profs.forEach(prof =>{
+        profesionales.forEach(profesional => {
+            if(prof.id == profesional.id){
+                arrProfs.push(profesional);
+            }
+        })
+        
+    })
+
+    return arrProfs;
+
+}
 
 export default function Trabajo(props) {
-    //falta agregar la funcion de buscar el rubro por su id y de importar el json
 
     const trabajo = props.navigation.state.params;
-    const link = props.navigation.state.params.uriPicture
+    const link = trabajo.uriPicture
     const image = { uri: link }
-    const linkVid = props.navigation.state.params.video
+    const linkVid = trabajo.video
     const vid = { uri: linkVid }
-    return (
-        <ScrollView>
-            <Text style={styles.title}>{trabajo.name}</Text>
-            <Text style={styles.text}>
-                Rubro: {trabajo.rubro} {"\n"}
-                Descripción: {trabajo.description} {"\n"}
-            </Text>
-             <Image source={image} style={styles.image} />
+    let data = [];
+
+
+    const renderItem = ({item}) => (
+        <TouchableOpacity style={styles.button}onPress={() => {
+            props.navigation.navigate('Profesional', item);
+        }}>
+            <Text style={styles.buttonText}> {item.name}</Text>
+        </TouchableOpacity>
+    );
+
+    if(trabajo.promPor == 'Empresa'){
+        data = empleadosEmpresa(trabajo);
+        return (
+            <ScrollView>
+                <Text style={styles.title}>{trabajo.name}</Text>
+                <Text style={styles.text}>
+                    Rubro: {trabajo.rubro} {"\n"}
+                    Descripción: {trabajo.description} {"\n"}
+                </Text>
+                 <Image source={image} style={styles.image} />
+                
+            <View style={styles.WebViewStyle}>
+            <WebView
+                    source={vid}
+                    javaScriptEnabled={true}
+                    domStorageEnabled={true}/>
+            </View>
+            <Text>Empleados de la Empresa</Text>
+            <View>
+                <FlatList data={data} renderItem={renderItem} keyExtractor={item => item.id}/>
+            </View>
             
-        <View style={styles.WebViewStyle}>
-        <WebView
-                source={vid}
-                javaScriptEnabled={true}
-                domStorageEnabled={true}/>
-        </View>
+                <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Reserva', trabajo)}>
+                
+                    <Text style={styles.buttonText}>Reservar Ahora</Text>
+                </TouchableOpacity>
+            </ScrollView>
+        )
+    }
+    else{
+        return (
+            <ScrollView>
+                <Text style={styles.title}>{trabajo.name}</Text>
+                <Text style={styles.text}>
+                    Rubro: {trabajo.rubro} {"\n"}
+                    Descripción: {trabajo.description} {"\n"}
+                </Text>
+                 <Image source={image} style={styles.image} />
+                
+            <View style={styles.WebViewStyle}>
+            <WebView
+                    source={vid}
+                    javaScriptEnabled={true}
+                    domStorageEnabled={true}/>
+            </View>
             
-        
-            <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Reserva', trabajo)}>
-            
-                <Text style={styles.buttonText}>Reservar Ahora</Text>
-            </TouchableOpacity>
-        </ScrollView>
-    )
+                <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Reserva', trabajo)}>
+                    <Text style={styles.buttonText}>Reservar Ahora</Text>
+                </TouchableOpacity>
+            </ScrollView>
+        )
+    }    
 }
 
 const styles = StyleSheet.create({

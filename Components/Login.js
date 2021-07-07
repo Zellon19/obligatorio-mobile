@@ -97,10 +97,6 @@ export default function Login(props) {
                     <TouchableOpacity onPress={() => {alert('Jodete ^_^')}}>
                         <Text style={styles.forgot}>¿Olvidaste tu Contraseña?</Text>    
                     </TouchableOpacity>
-
-                    <TouchableOpacity onPress={() => navigate('Registrarse')}>   
-                    <Text style={styles.forgot}>¡Regístrate ahora!</Text>
-                    </TouchableOpacity>
                     
                     <TouchableOpacity style={styles.button} onPress={() => loginCheck(navigate)}>
                         <Text style={styles.buttonText}>Ingresar</Text>

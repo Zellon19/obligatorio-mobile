@@ -62,7 +62,9 @@
         "name":"Alfredo Martinez"}],
     "trabajos":[
         {"id": 3,
-        "name": "Auxilio Mecanico"}]
+        "name": "Auxilio Mecanico"},
+        {"id": 6,
+            "name": "Electricista Automotriz"}]
     },
 
     {
@@ -145,7 +147,7 @@
                {"id": 10,
                 "name":"William Shakespeare"}],
         "trabajos":[
-            {"id": 6,
+            {"id": 8,
         "name": "Escritor de ensayos"}
         ]
         }
