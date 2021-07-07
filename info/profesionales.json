@@ -10,7 +10,7 @@
     "uriFoto": "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/299-pom6733-chim-ae.jpg?w=600&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=1b5c21e22001e0b15c5692bf4e0f2dbe",
     "trabajos":{
         "particular":[ {
-                           "id":0,
+                           "id":-1,
                            "name": "No tiene"
                           }         
         ],
@@ -32,7 +32,7 @@
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/305-ake1539-chim-ae.jpg?w=1000&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=b3767fc4ba040201544d2edf59ed3614",
     "trabajos":{
         "particular":[ {
-                           "id":0,
+                           "id":-1,
                            "name": "No tiene"
                           }         
         ],
@@ -54,7 +54,7 @@
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/392-felix-6922_1.jpg?w=600&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f08369f8dcea757377dd783c331646d8",
     "trabajos":{
         "particular":[ {
-                           "id":0,
+                           "id":-1,
                            "name": "No tiene"
                           }         
         ],
@@ -81,7 +81,7 @@
             }         
         ],
         "empresa":[ {            
-            "id":0,
+            "id":-1,
             "name": "No tiene"
             }
         ]
@@ -122,7 +122,7 @@
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-209-jj-00589.jpg?w=600&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=479240d4c457b769c5578ac969f7ad93",
     "trabajos":{
         "particular":[ {
-            "id": 5,
+            "id": 9,
             "name": "Desarrollador de Software"
                           }         
         ],
@@ -137,21 +137,21 @@
     {
     "id": 6,
     "name":"Siri Gimenez",
-    "rubro":"Tecnología",
+    "rubro":"Consultoría legal",
     "nacion":"Uruguay",
     "edad":29,
     "email":"ladeapol@gmail.com",
-    "desc":"Siri es una excelente desarrolladora full-stack, considerada senior por su trayectoria. Dispuesta a embarcarse en nuevos desafíos.",
+    "desc":"Siri es una excelente abogada, considerada senior por su trayectoria. Dispuesta a embarcarse en nuevos desafíos.",
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/396-felix-mg-2040-a.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=7115454f1351e3a1c76291bfa6c09371",
     "trabajos":{
         "particular":[ {
             "id": 5,
-            "name": "Desarrollador de Software"
+            "name": "Abogado"
                           }         
         ],
         "empresa":[ {            
             
-            "id":0,
+            "id":-1,
             "name": "No tiene"
                 }
           ]
@@ -173,7 +173,7 @@
                           }         
         ],
         "empresa":[ {                    
-            "id":0,
+            "id":-1,
             "name": "No tiene"
                 }
           ]
@@ -191,13 +191,13 @@
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/310-jira1383-chim_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=3625c8664599e2e93a73baec595a403c",
     "trabajos":{
         "particular":[ {
-            "id": 5,
+            "id": 9,
         "name": "Desarrollador de Software"
                           }         
         ],
         "empresa":[ {            
             
-            "id":0,
+            "id":-1,
             "name": "No tiene"
                 }
           ]
@@ -215,13 +215,13 @@
     "uriFoto":"https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/392-mckinsey-21a3355-nam.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=42abca3ed3dd6a6e95b546df422ca201",
     "trabajos":{
         "particular":[ {
-            "id": 0,
+            "id": -1,
             "name": "No tiene"
                           }         
         ],
         "empresa":[ {            
             
-            "id":0,
+            "id":-1,
             "name": "No tiene"
                 }
           ]
@@ -244,7 +244,7 @@
         ],
         "empresa":[ {            
             
-            "id":0,
+            "id":-1,
             "name": "No tiene"
                 }
           ]

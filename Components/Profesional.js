@@ -39,7 +39,10 @@ export default function Profesional(props){
     const renderItem = ({item}) => ( 
         <TouchableOpacity style={styles.button}onPress={() => {
             buscarTrabajo(item);
-            props.navigation.navigate('Trabajo', trabajoG);}}>
+            if(item.id != -1){
+                props.navigation.navigate('Trabajo', trabajoG);}}
+            }>
+            
             <Text style={styles.buttonText}>{item.name}</Text>
         </TouchableOpacity>
     );

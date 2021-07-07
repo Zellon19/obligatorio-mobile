@@ -41,16 +41,6 @@
     },
     {
         "id": 5,
-        "name": "Desarrollador de Software",
-        "rubro": "Tecnología",
-        "description": "Desarrollador full-stack que ofrece sus servicios",
-        "uriPicture": "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm22-74-kwan-2-28-01.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=a541f4326ba4c4a24a3dbd6da95eddf0",
-        "video": "https://youtu.be/LBNDfxjEYlA",
-        "proList": null,
-        "promPor":"Profesional"
-    },
-    {
-        "id": 5,
         "name": "Abogado",
         "rubro": "Consultoría Legal",
         "description": "Se ofrecen servicios de abogado por una reconocida firma",
@@ -86,6 +76,16 @@
         "description": "Se escriben ensayos y analisis",
         "uriPicture": "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/396-felix-2234-jir.jpg?w=600&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=5a8dbd4d5ccc9b01aa9615f4b2718e25",
         "video": "https://youtu.be/bZAarPyqQ70",
+        "proList": null,
+        "promPor":"Profesional"
+    },
+    {
+        "id": 9,
+        "name": "Desarrollador de Software",
+        "rubro": "Tecnología",
+        "description": "Desarrollador full-stack que ofrece sus servicios",
+        "uriPicture": "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm22-74-kwan-2-28-01.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=a541f4326ba4c4a24a3dbd6da95eddf0",
+        "video": "https://youtu.be/LBNDfxjEYlA",
         "proList": null,
         "promPor":"Profesional"
     }
