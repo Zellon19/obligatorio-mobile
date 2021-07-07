@@ -40,10 +40,10 @@ export default function Trabajo(props) {
 
 
     const renderItem = ({item}) => (
-        <TouchableOpacity style={styles.button}onPress={() => {
+        <TouchableOpacity style={styles.buttonEmp}onPress={() => {
             props.navigation.navigate('Profesional', item);
         }}>
-            <Text style={styles.buttonText}> {item.name}</Text>
+            <Text style={styles.buttonTextEmp}> {item.name}</Text>
         </TouchableOpacity>
     );
 
@@ -64,13 +64,12 @@ export default function Trabajo(props) {
                     javaScriptEnabled={true}
                     domStorageEnabled={true}/>
             </View>
-            <Text>Empleados de la Empresa</Text>
+            <Text Text style={styles.title}>Empleados de la Empresa</Text>
             <View>
                 <FlatList data={data} renderItem={renderItem} keyExtractor={item => item.id}/>
             </View>
             
                 <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Reserva', trabajo)}>
-                
                     <Text style={styles.buttonText}>Reservar Ahora</Text>
                 </TouchableOpacity>
             </ScrollView>
@@ -149,5 +148,20 @@ WebViewStyle: {
     backgroundColor: "black",
     height: 350,
 },
+buttonEmp:{
+    padding: 10,
+    backgroundColor: '#aaffef',
+    width: 180,
+    alignItems: 'center',
+    alignSelf: 'center',
+    marginTop: 30,
+    width: 400,
+    marginRight: 15,
+},
+buttonTextEmp:{
+    fontFamily: 'Futura',
+    fontSize:  15
+}
+
 });
 
