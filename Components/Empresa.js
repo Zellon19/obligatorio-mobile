@@ -48,8 +48,6 @@ export default function Empresa(props) {
     const renderItemProf = ({item}) => (
         <TouchableOpacity style={styles.item}onPress={() => {
             buscarProfesional(item);
-            console.log(item);
-            console.log(profGlobal);
             if(item.id != -1){
                 navigation.navigate('Profesional', profGlobal);
             }

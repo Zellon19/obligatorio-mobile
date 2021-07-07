@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, ScrollView, Image, FlatList} from 'react-native'
+import { TouchableOpacity, Text, View, StyleSheet, ScrollView, Image, FlatList} from 'react-native'
 
 const rubros = require('../info/rubros.json');
+const trabajos = require('../info/trabajos.json');
 
 let test = '';
+let trabajoG = '';
 const buscarRubro = (idRubro) => {
     rubros.forEach(rub => {
         if(rub.id == idRubro){
@@ -11,6 +13,9 @@ const buscarRubro = (idRubro) => {
         }
     })
 }
+
+
+
 
 export default function Profesional(props){
     const link = props.navigation.state.params.uriFoto
@@ -21,8 +26,22 @@ export default function Profesional(props){
     buscarRubro(profesional.rubro);
     const rubro = test;
 
+
+    const buscarTrabajo = (item) => {
+        trabajos.forEach(trabajo => {
+                if(item.id == trabajo.id){
+                    trabajoG = trabajo;
+                }
+        })
+            
+    }
+
     const renderItem = ({item}) => ( 
-            <Text style={styles.text}>{item.name}</Text> 
+        <TouchableOpacity style={styles.item}onPress={() => {
+            buscarTrabajo(item);
+            props.navigation.navigate('Trabajo', trabajoG);}}>
+            <Text style={styles.text}>{item.name}</Text>
+        </TouchableOpacity>
     );
     return (
       
