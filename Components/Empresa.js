@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View, Image, StyleSheet, ScrollView, FlatList } from 'react-native'
+import { Text, View, Image, StyleSheet, ScrollView, FlatList, TouchableOpacity } from 'react-native'
 
 const rubros = require('../info/rubros.json');
 
