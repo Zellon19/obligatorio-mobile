@@ -103,49 +103,63 @@ function buscarProf(item){
 let email = "";
 let cuerpo = "";
 
+
+function validateEmail(email) {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(String(email));
+}
+
 function mandarEmail(item){
 
-    if(item.promPor == 'Empresa'){
-        buscarEmpresa(item);
-    }
-    else{
-        buscarProf(item);
-    }
-
-    var data1 = {
-        service_id: 'service_xpt2tuq',
-        template_id: 'template_ael44p9',
-        user_id: 'user_1L0OEgoF7wrQCcwGgPx1l',
-        template_params: {
-            'body': cuerpo,
-            'email': emailA
+    if(validateEmail(email)){
+        if(item.promPor == 'Empresa'){
+            buscarEmpresa(item);
         }
-    };
-
-    var data2 = {
-        service_id: 'default_service',
-        template_id: 'template_h544vug',
-        user_id: 'user_1L0OEgoF7wrQCcwGgPx1l',
-        template_params: {
-            'email': email
+        else{
+            buscarProf(item);
         }
-    };
-
-    fetch('https://api.emailjs.com/api/v1.0/email/send', {
+    
+        var data1 = {
+            service_id: 'service_xpt2tuq',
+            template_id: 'template_ael44p9',
+            user_id: 'user_1L0OEgoF7wrQCcwGgPx1l',
+            template_params: {
+                'body': cuerpo,
+                'email': emailA
+            }
+        };
+    
+        var data2 = {
+            service_id: 'default_service',
+            template_id: 'template_h544vug',
+            user_id: 'user_1L0OEgoF7wrQCcwGgPx1l',
+            template_params: {
+                'email': email
+            }
+        };
+    
+        fetch('https://api.emailjs.com/api/v1.0/email/send', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data1)
+          });
+    
+       fetch('https://api.emailjs.com/api/v1.0/email/send', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+            'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data1)
-      });
+        body: JSON.stringify(data2)
+        });
 
-   fetch('https://api.emailjs.com/api/v1.0/email/send', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data2)
-    });
+        alert('Mensaje enviado con exito, revise su correo');
+    }
+    else{
+        alert('Ha ocurrido un error en el email');
+    }
+    
 
 } 
 
