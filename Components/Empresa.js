@@ -40,7 +40,10 @@ export default function Empresa(props) {
 
     const renderItem = ({item}) => (
         <TouchableOpacity style={styles.button}onPress={() => {buscarTrabajos(item)
-            navigation.navigate('Trabajo', trabajoGlobal)}}>
+            if(item.id != -1){
+                navigation.navigate('Trabajo', trabajoGlobal)}}
+            }
+            >
             <Text style={styles.buttonText}> {item.name}</Text>
         </TouchableOpacity>
     );
