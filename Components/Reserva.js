@@ -113,12 +113,12 @@ function mandarEmail(item){
     }
 
     var data1 = {
-        service_id: 'default_service',
+        service_id: 'service_xpt2tuq',
         template_id: 'template_ael44p9',
         user_id: 'user_1L0OEgoF7wrQCcwGgPx1l',
         template_params: {
-            'email': emailA,
-            'body': cuerpo
+            'body': cuerpo,
+            'email': emailA
         }
     };
 
@@ -139,7 +139,7 @@ function mandarEmail(item){
         body: JSON.stringify(data1)
       });
 
-    fetch('https://api.emailjs.com/api/v1.0/email/send', {
+   fetch('https://api.emailjs.com/api/v1.0/email/send', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'

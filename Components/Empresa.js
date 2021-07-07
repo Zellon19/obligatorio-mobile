@@ -13,7 +13,8 @@ const buscarRubro = (idRubro) => {
 }
 
 const trabajos = require('../info/trabajos.json');
-const test2 = '';
+let test2 = '';
+
 const buscarTrabajos = (item) => {
     trabajos.forEach(tra => {
         if (tra.id === item.id) {
@@ -34,7 +35,7 @@ export default function Empresa(props) {
         </TouchableOpacity>
     );
 
-    const link = props.navigation.state.params.uriFoto
+    const link = props.navigation.state.params.uriFoto;
     const empresa = props.navigation.state.params;
     const image = { uri: link }
     buscarRubro(empresa.rubro);
